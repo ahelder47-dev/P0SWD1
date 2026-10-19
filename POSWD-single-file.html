@@ -1,0 +1,2208 @@
+<!DOCTYPE html>
+<html lang="pt" w-tid="1">
+<head w-tid="3">
+    
+
+<link rel="stylesheet" href="https://api.websim.com/fonts.css?v=d1f8639b4de56246e66e7879643ccb05d3146094">
+<style class="websim-injected websim-ios-mobile-fix">
+/* iOS zoom prevention and overscroll behavior - injected by WebSim */
+html, body {
+  touch-action: pan-x pan-y;
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
+}
+input, textarea, select {
+  font-size: max(1rem, 16px) !important;
+}
+</style>
+<script class="websim-injected">__WEBSIM_DATA__={"home":false,"hostOrigin":"https://websim.com","apiOrigin":"https://api.websim.com","isTopLevelFrame":false,"project_id":"0z0c5khbb3fwpzqvitdv","preview":true,"activityCaptureMode":"on","route":{"type":"project","id":"0z0c5khbb3fwpzqvitdv"},"baseUrl":"https://websim.com/p/0z0c5khbb3fwpzqvitdv"}</script>
+<script class="websim-injected" src="https://api.websim.com/dist/index.js?v=d1f8639b4de56246e66e7879643ccb05d3146094"></script>
+<meta charset="UTF-8" w-tid="5"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" w-tid="7"/>
+    <title w-tid="9">POSWD</title>
+    <style w-tid="11">
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    background: #111827;
+    color: #fff;
+}
+input, select, button, textarea {
+    font-family: inherit;
+}
+input:focus {
+    outline: none;
+    border-color: #f59e0b !important;
+}
+button:active {
+    transform: scale(0.97);
+}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #1f2937; }
+::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 4px; }
+
+/* ===== DISPLAY ===== */
+.hidden { display: none !important; }
+.block { display: block; }
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.grid { display: grid; }
+.flex-1 { flex: 1 1 0%; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.gap-1 { gap: 0.25rem; }
+.gap-1\\.5 { gap: 0.375rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-2\\.5 { gap: 0.625rem; }
+.gap-3 { gap: 0.75rem; }
+.space-x-2 > * + * { margin-left: 0.5rem; }
+.space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-2\\.5 > * + * { margin-top: 0.625rem; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* ===== POSITION ===== */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.top-0 { top: 0; }
+.bottom-2 { bottom: 0.5rem; }
+.left-4 { left: 1rem; }
+.right-4 { right: 1rem; }
+.z-50 { z-index: 50; }
+
+/* ===== SIZING ===== */
+.w-full { width: 100%; }
+.w-4 { width: 1rem; }
+.w-7 { width: 1.75rem; }
+.max-w-sm { max-width: 24rem; }
+.h-full { height: 100%; }
+.h-screen { height: 100vh; }
+.h-7 { height: 1.75rem; }
+.max-h-\\[90vh\\] { max-height: 90vh; }
+.min-h-screen { min-height: 100vh; }
+
+/* ===== OVERFLOW ===== */
+.overflow-hidden { overflow: hidden; }
+.overflow-y-auto { overflow-y: auto; }
+.overflow-x-auto { overflow-x: auto; }
+
+/* ===== TEXT ALIGN ===== */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.whitespace-nowrap { white-space: nowrap; }
+.uppercase { text-transform: uppercase; }
+.tracking-wider { letter-spacing: 0.05em; }
+.tracking-widest { letter-spacing: 0.1em; }
+.select-none { user-select: none; }
+
+/* ===== FONT SIZE ===== */
+.text-\\[9px\\] { font-size: 9px; }
+.text-\\[10px\\] { font-size: 10px; }
+.text-\\[11px\\] { font-size: 11px; }
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+
+/* ===== FONT WEIGHT ===== */
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-black { font-weight: 900; }
+
+/* ===== TEXT COLORS ===== */
+.text-white { color: #fff; }
+.text-black { color: #000; }
+.text-gray-400 { color: #9ca3af; }
+.text-gray-500 { color: #6b7280; }
+.text-gray-300 { color: #d1d5db; }
+.text-amber-500 { color: #f59e0b; }
+.text-amber-400 { color: #fbbf24; }
+.text-emerald-400 { color: #34d399; }
+.text-blue-400 { color: #60a5fa; }
+.text-rose-400 { color: #fb7185; }
+
+/* ===== BACKGROUNDS ===== */
+.bg-gray-900 { background-color: #111827; }
+.bg-gray-800 { background-color: #1f2937; }
+.bg-gray-700 { background-color: #374151; }
+.bg-gray-900 { background-color: #111827; }
+.bg-black\\/30 { background-color: rgba(0,0,0,0.3); }
+.bg-black\\/80 { background-color: rgba(0,0,0,0.8); }
+.bg-amber-500 { background-color: #f59e0b; }
+.bg-amber-500\/20 { background-color: rgba(245,158,11,0.2); }
+.bg-emerald-500\/20 { background-color: rgba(16,185,129,0.2); }
+.bg-amber-600 { background-color: #d97706; }
+.bg-emerald-600 { background-color: #059669; }
+.bg-emerald-950\\/30 { background-color: rgba(2, 80, 50, 0.3); }
+.bg-rose-950\\/30 { background-color: rgba(105, 10, 40, 0.3); }
+.bg-blue-600 { background-color: #2563eb; }
+.bg-indigo-600 { background-color: #4f46e5; }
+.bg-purple-600 { background-color: #9333ea; }
+.bg-rose-700 { background-color: #be123c; }
+
+/* ===== BORDERS ===== */
+.border { border-width: 1px; }
+.border-b { border-bottom-width: 1px; }
+.border-b-2 { border-bottom-width: 2px; }
+.border-gray-700 { border-color: #374151; }
+.border-gray-700 { border-color: #374151; }
+.border-emerald-600\\/50 { border-color: rgba(5, 150, 105, 0.5); }
+.border-rose-600\\/50 { border-color: rgba(225, 29, 72, 0.5); }
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-2xl { border-radius: 1rem; }
+.rounded-full { border-radius: 9999px; }
+
+/* ===== PADDING ===== */
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-2\\.5 { padding: 0.625rem; }
+.p-3 { padding: 0.75rem; }
+.p-3\\.5 { padding: 0.875rem; }
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.p-8 { padding: 2rem; }
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-2\\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-1\\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-2\\.5 { padding-top: 0.625rem; padding-bottom: 0.625rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.pb-2 { padding-bottom: 0.5rem; }
+.pb-6 { padding-bottom: 1.5rem; }
+.pb-20 { padding-bottom: 5rem; }
+.pt-2 { padding-top: 0.5rem; }
+
+/* ===== MARGIN ===== */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+
+/* ===== EFFECTS ===== */
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1); }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1); }
+.shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+.opacity-40 { opacity: 0.4; }
+.cursor-pointer { cursor: pointer; }
+
+/* ===== STATES ===== */
+.hover\\:bg-amber-400:hover { background-color: #fbbf24; }
+.hover\\:bg-amber-500:hover { background-color: #f59e0b; }
+.hover\\:bg-amber-600:hover { background-color: #d97706; }
+.hover\\:bg-rose-900:hover { background-color: #881337; }
+.hover\\:bg-rose-600:hover { background-color: #e11d48; }
+.hover\\:bg-emerald-500:hover { background-color: #10b981; }
+.hover\\:bg-blue-500:hover { background-color: #3b82f6; }
+.hover\\:bg-indigo-500:hover { background-color: #6366f1; }
+.hover\\:bg-purple-500:hover { background-color: #a855f7; }
+.hover\\:bg-gray-600:hover { background-color: #4b5563; }
+.hover\\:text-rose-200:hover { color: #fecaca; }
+.transition { transition: all 0.15s ease; }
+
+#navBar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+#navBar::-webkit-scrollbar { display: none; }
+#navBar > button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ===== COMPONENT STYLES ===== */
+#modalGenerico {
+    backdrop-filter: blur(4px);
+}
+#gridMesasServente .p-4 {
+    transition: all 0.15s ease;
+}
+#gridMesasServente .p-4:active {
+    transform: scale(0.96);
+}
+#listaProdutosServente .produto-item {
+    transition: all 0.15s ease;
+}
+#listaProdutosServente .produto-item:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+.badge-stock {
+    font-size: 9px;
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.3);
+}
+.conta-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    padding: 12px;
+}
+.conta-card .item-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #9ca3af;
+    padding: 2px 0;
+}
+.empregado-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    padding: 12px;
+}
+.foto-funcionario {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #374151;
+}
+.foto-func-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.foto-func-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f59e0b;
+    background: #374151;
+}
+.foto-func-login {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #374151;
+}
+.foto-func-img-sm {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.foto-func-placeholder-sm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f59e0b;
+    background: #374151;
+}
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+.status-ocupada {
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* ===== SVG ICON BASE ===== */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+.icon-lg { width: 1.25em; height: 1.25em; }
+.icon-sm { width: 0.75em; height: 0.75em; }
+</style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col h-screen overflow-hidden select-none" w-tid="13">
+
+    <!-- TELA ABERTURA DO DIA -->
+    <div id="tela-dia" class="hidden flex flex-col items-center justify-center h-full p-6 bg-gray-900 absolute inset-0 z-50" w-tid="15">
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 w-full max-w-sm shadow-2xl text-center" w-tid="17">
+            <span class="text-3xl" w-tid="19">⚡</span>
+            <h1 class="text-2xl font-bold mt-2" w-tid="21">POS<span class="text-amber-500" w-tid="23">WD</span></h1>
+            <p class="text-xs text-gray-400 mt-1 mb-1" w-tid="25">O dia está fechado.</p>
+            <p class="text-xs text-gray-500 mb-4" id="infoUltimoFecho" w-tid="27"></p>
+            <p class="text-xs text-gray-400 mb-3" w-tid="29">Abertura do Dia — PIN do ADMIN ou CAIXA</p>
+            <input type="password" id="inputCodigoDia" placeholder="PIN de acesso" class="w-full bg-gray-900 border border-gray-700 p-3 rounded-xl text-center text-xl tracking-widest text-amber-500 mb-3 focus:outline-none focus:border-amber-500" w-tid="31"/>
+            <input type="number" id="inputAberturaMontante" placeholder="Montante de abertura (MT)" class="w-full bg-gray-900 border border-gray-700 p-3 rounded-xl text-center text-xl text-emerald-400 mb-4 focus:outline-none focus:border-amber-500" w-tid="33"/>
+            <button onclick="abrirDia()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition" w-tid="35">Abrir o Dia</button>
+        </div>
+    </div>
+
+    <!-- TELA DE LOGIN -->
+    <div id="tela-login" class="hidden flex flex-col items-center justify-center h-full p-6 bg-gray-900 absolute inset-0 z-50" w-tid="37">
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 w-full max-w-sm shadow-2xl text-center" w-tid="39">
+            <span class="text-3xl" w-tid="41">⚡</span>
+            <h1 class="text-2xl font-bold mt-2" w-tid="43">POS<span class="text-amber-500" w-tid="45">WD</span></h1>
+            <p class="text-xs text-gray-400 mt-1 mb-6" w-tid="47">Insira o seu código PIN para entrar</p>
+            <input type="password" id="inputCodigo" placeholder="PIN de acesso" class="w-full bg-gray-900 border border-gray-700 p-3 rounded-xl text-center text-xl tracking-widest text-amber-500 mb-4 focus:outline-none focus:border-amber-500" w-tid="49"/>
+            <button onclick="autenticarPorCodigo()" class="w-full bg-amber-500 hover:bg-amber-400 text-black font-bold py-3 rounded-xl transition" w-tid="51">Entrar no Sistema</button>
+            <p id="infoLoginDia" class="text-xs text-gray-500 mt-3" w-tid="53"></p>
+        </div>
+    </div>
+
+    <!-- APLICAÇÃO PRINCIPAL -->
+    <div id="app-container" class="flex flex-col h-screen hidden" w-tid="55">
+        <header class="bg-gray-800 p-4 flex justify-between items-center shadow-md border-b border-gray-700" w-tid="57">
+            <div class="flex items-center space-x-2" w-tid="59">
+                <span class="text-amber-500 text-xl" w-tid="61">⚡</span>
+                <h1 class="text-lg font-bold" w-tid="63">POS<span class="text-amber-500" w-tid="65">WD</span></h1>
+            </div>
+            <div class="flex items-center gap-2" w-tid="67">
+                <span id="infoSessao" class="bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full text-xs font-semibold hidden" w-tid="69"></span>
+                <span id="badgePerfil" class="bg-amber-500/20 text-amber-400 px-2.5 py-1 rounded-full text-xs font-semibold uppercase" w-tid="71"></span>
+                <button id="btnFecharDia" onclick="fecharDia()" class="bg-rose-700 hover:bg-rose-600 text-white px-2.5 py-1.5 rounded-lg text-xs hidden" w-tid="73">Fechar o Dia</button>
+                <button onclick="logout()" class="bg-gray-700 hover:bg-rose-900 text-gray-300 hover:text-rose-200 px-2.5 py-1.5 rounded-lg text-xs" title="Fechar Sessão" w-tid="75"><svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="77"><path d="M18.36 6.64a9 9 0 1 1-12.73 0" w-tid="79"/><line x1="12" y1="2" x2="12" y2="12" w-tid="81"/></svg></button>
+            </div>
+        </header>
+
+        <nav id="navBar" class="bg-gray-800 flex justify-around border-b border-gray-700 text-xs font-medium" w-tid="83"></nav>
+
+        <main class="flex-1 overflow-y-auto p-4 relative" w-tid="85">
+
+            <!-- MESAS -->
+            <section id="area-mesas-geral" class="hidden flex flex-col h-full" w-tid="87">
+                <div id="sub-servente-mesas" w-tid="89">
+                    <div class="flex justify-between items-center mb-3" w-tid="91">
+                        <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider" w-tid="93">Gestão de Mesas e Zonas</h2>
+                    </div>
+                    <div id="filtroZonas" class="flex gap-2 overflow-x-auto pb-2 mb-3" w-tid="95"></div>
+                    <div class="grid grid-cols-2 gap-3 pb-6" id="gridMesasServente" w-tid="97"></div>
+                </div>
+                <div id="sub-servente-menu" class="hidden flex-col h-full" w-tid="99">
+                    <div class="flex justify-between items-center mb-2" w-tid="101">
+                        <button onclick="voltarParaMesas()" class="text-xs bg-gray-700 px-3 py-1.5 rounded-lg" w-tid="103"><svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="105"><line x1="19" y1="12" x2="5" y2="12" w-tid="107"/><polyline points="12 19 5 12 12 5" w-tid="109"/></svg> Voltar Mesas</button>
+                        <span id="tituloMesaAtiva" class="font-bold text-amber-500 text-sm" w-tid="111"></span>
+                    </div>
+                    <div class="grid grid-cols-5 gap-1 bg-gray-800 p-1 rounded-xl mb-3 text-center text-[11px] font-bold" w-tid="113">
+                        <button onclick="mudarCategoriaMenu('Entrada')" id="tabEntrada" class="py-2 rounded-lg bg-amber-500 text-black leading-tight" w-tid="115">Entradas</button>
+                        <button onclick="mudarCategoriaMenu('Comida')" id="tabComida" class="py-2 rounded-lg text-gray-400 leading-tight" w-tid="117">Comida</button>
+                        <button onclick="mudarCategoriaMenu('Sobremesa')" id="tabSobremesa" class="py-2 rounded-lg text-gray-400 leading-tight" w-tid="119">Sobremesa</button>
+                        <button onclick="mudarCategoriaMenu('Bebida c/Álcool')" id="tabBebidaAlcool" class="py-2 rounded-lg text-gray-400 leading-tight" w-tid="121">Bebidas<br w-tid="123"/>c/Álcool</button>
+                        <button onclick="mudarCategoriaMenu('Bebida s/Álcool')" id="tabBebidaNaoAlcool" class="py-2 rounded-lg text-gray-400 leading-tight" w-tid="125">Bebidas<br w-tid="127"/>s/Álcool</button>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5 overflow-y-auto flex-1 pb-20" id="listaProdutosServente" w-tid="129"></div>
+                    <div class="absolute bottom-2 left-4 right-4 bg-gray-800 border border-gray-700 p-3 rounded-xl flex justify-between items-center shadow-xl" w-tid="131">
+                        <div w-tid="133">
+                            <span class="text-[10px] text-gray-400 block" w-tid="135">Itens Selecionados</span>
+                            <span id="totalCarrinhoParcial" class="text-sm font-black text-amber-400" w-tid="137">0.00 MT</span>
+                        </div>
+                        <button onclick="enviarComanda()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs px-4 py-2.5 rounded-lg font-bold" w-tid="139">Enviar Pedido</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CAIXA -->
+            <section id="area-caixa" class="hidden" w-tid="141">
+                <h2 class="text-sm font-semibold text-gray-400 mb-3 uppercase tracking-wider" w-tid="143">Contas Prontas para Pagamento</h2>
+                <div class="space-y-3" id="listaContasCaixa" w-tid="145"></div>
+            </section>
+
+            <!-- FATURAÇÃO -->
+            <section id="area-faturacao" class="hidden space-y-4" w-tid="147">
+                <div class="flex justify-between items-center mb-2" w-tid="149">
+                    <div class="flex items-center gap-2" w-tid="151">
+                        <button onclick="voltarAoPainel()" class="text-xs bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg" w-tid="153"><svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="155"><line x1="19" y1="12" x2="5" y2="12" w-tid="157"/><polyline points="12 19 5 12 12 5" w-tid="159"/></svg> Voltar ao Painel</button>
+                        <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider" w-tid="161">Recibos e Facturação</h2>
+                    </div>
+                    <button onclick="exportarFacturasCSV()" class="bg-emerald-600 hover:bg-emerald-500 text-xs px-3 py-1.5 rounded-lg font-bold flex items-center gap-1" w-tid="163">
+                        <svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="165"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" w-tid="167"/><polyline points="7 10 12 15 17 10" w-tid="169"/><line x1="12" y1="15" x2="12" y2="3" w-tid="171"/></svg> Exportar CSV
+                    </button>
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-center text-xs" w-tid="173">
+                    <div class="bg-gray-800 p-3 rounded-xl border border-gray-700" w-tid="175">
+                        <span class="text-gray-400 block" w-tid="177">Recibos Hoje</span>
+                        <span id="contadorFacturasHoje" class="text-lg font-black text-amber-400" w-tid="179">0</span>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded-xl border border-gray-700" w-tid="181">
+                        <span class="text-gray-400 block" w-tid="183">Total Hoje</span>
+                        <span id="totalFacturasHoje" class="text-lg font-black text-emerald-400" w-tid="185">0.00 MT</span>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded-xl border border-gray-700" w-tid="187">
+                        <span class="text-gray-400 block" w-tid="189">Total Geral</span>
+                        <span id="totalFacturasGeral" class="text-lg font-black text-blue-400" w-tid="191">0.00 MT</span>
+                    </div>
+                </div>
+                <div class="flex gap-2 overflow-x-auto pb-2" id="filtroZonasFacturas" w-tid="193"></div>
+                <div class="space-y-3" id="listaFacturas" w-tid="195"></div>
+            </section>
+
+            <!-- DESPESAS -->
+            <section id="area-despesas" class="hidden space-y-4" w-tid="197">
+                <div class="flex justify-between items-center" w-tid="199">
+                    <button onclick="voltarAoPainel()" class="text-xs bg-gray-700 px-3 py-1.5 rounded-lg" w-tid="201">Voltar ao Painel</button>
+                    <button onclick="abrirModalDespesa()" class="bg-rose-700 hover:bg-rose-600 text-xs px-3 py-2 rounded-lg font-bold" w-tid="203">+ Registar Despesa</button>
+                </div>
+                <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider" w-tid="205">Despesas</h2>
+                <div class="bg-gray-800 border border-gray-700 p-3 rounded-xl flex justify-between items-center" w-tid="207">
+                    <span class="text-xs text-gray-400" w-tid="209">Total registado hoje</span>
+                    <strong id="totalDespesasHoje" class="text-lg text-rose-400" w-tid="211">0.00 MT</strong>
+                </div>
+                <div id="listaDespesas" class="space-y-2" w-tid="213"></div>
+            </section>
+
+            <!-- HISTORICO DE DIAS -->
+            <section id="area-historico-dias" class="hidden space-y-4" w-tid="215">
+                <div class="flex justify-between items-center" w-tid="217">
+                    <button onclick="voltarAoPainel()" class="text-xs bg-gray-700 px-3 py-1.5 rounded-lg" w-tid="219">Voltar ao Painel</button>
+                    <button onclick="exportarHistoricoDiasCSV()" class="bg-emerald-600 text-xs px-3 py-2 rounded-lg font-bold" w-tid="221">Exportar CSV</button>
+                </div>
+                <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider" w-tid="223">Histórico de Dias Fechados</h2>
+                <div id="listaHistoricoDias" class="space-y-2" w-tid="225"></div>
+            </section>
+
+            <!-- CLIENTES -->
+            <section id="area-clientes" class="hidden space-y-4" w-tid="227">
+                <div class="flex justify-between items-center" w-tid="229">
+                    <button onclick="voltarAoPainel()" class="text-xs bg-gray-700 px-3 py-1.5 rounded-lg" w-tid="231">Voltar ao Painel</button>
+                    <button onclick="abrirModalCliente()" class="bg-blue-600 text-xs px-3 py-2 rounded-lg font-bold" w-tid="233">+ Novo Cliente</button>
+                </div>
+                <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider" w-tid="235">Clientes</h2>
+                <input id="pesquisaClientes" oninput="renderClientes()" placeholder="Pesquisar nome ou telefone" class="w-full bg-gray-800 border border-gray-700 p-2.5 rounded-xl text-white" w-tid="237"/>
+                <div id="listaClientes" class="space-y-2" w-tid="239"></div>
+            </section>
+
+            <!-- DIVIDAS -->
+            <section id="area-dividas" class="hidden space-y-4" w-tid="241">
+                <div class="flex justify-between items-center" w-tid="243">
+                    <button onclick="voltarAoPainel()" class="text-xs bg-gray-700 px-3 py-1.5 rounded-lg" w-tid="245">Voltar ao Painel</button>
+                    <strong id="totalDividasAbertas" class="text-rose-400 text-sm" w-tid="247">0.00 MT</strong>
+                </div>
+                <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider" w-tid="249">Dívidas de Clientes</h2>
+                <div id="listaDividas" class="space-y-2" w-tid="251"></div>
+            </section>
+
+            <!-- SUPERVISOR -->
+            <section id="area-supervisor" class="hidden space-y-4" w-tid="253">
+                <h2 class="text-sm font-semibold text-gray-400 mb-3 uppercase tracking-wider" w-tid="255">Painel do Supervisor</h2>
+                <div class="grid grid-cols-1 gap-3" w-tid="257">
+                    <button onclick="abrirModalProduto()" class="w-full bg-blue-600 hover:bg-blue-500 p-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2" w-tid="259">
+                        <svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="261"><circle cx="12" cy="12" r="10" w-tid="263"/><line x1="12" y1="8" x2="12" y2="16" w-tid="265"/><line x1="8" y1="12" x2="16" y2="12" w-tid="267"/></svg> Adicionar Produto / Stock
+                    </button>
+                </div>
+                <div class="mt-4" w-tid="269">
+                    <h3 class="text-xs text-gray-400 uppercase font-semibold mb-2" w-tid="271">Gestão Rápida de Preços & Stock</h3>
+                    <div class="flex gap-2 overflow-x-auto pb-2 mb-2" id="filtroZonaProdutosSup" w-tid="273"></div>
+                    <div id="listaProdutosSupervisor" class="space-y-2" w-tid="275"></div>
+                </div>
+            </section>
+
+            <!-- ADMIN -->
+            <section id="area-admin" class="hidden space-y-4" w-tid="277">
+                <h2 class="text-sm font-semibold text-gray-400 mb-3 uppercase tracking-wider" w-tid="279">Painel Administrativo Total</h2>
+                <div class="grid grid-cols-2 gap-3" w-tid="281">
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-700 text-center" w-tid="283">
+                        <svg class="icon icon-lg text-amber-500 mb-1" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="285"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" w-tid="287"/></svg>
+                        <h4 class="font-bold text-sm" w-tid="289">Faturamento</h4>
+                        <p class="text-lg font-black text-emerald-400" w-tid="291">14.500 MT</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-700 text-center" w-tid="293">
+                        <svg class="icon icon-lg text-amber-500 mb-1" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="295"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" w-tid="297"/><circle cx="9" cy="7" r="4" w-tid="299"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" w-tid="301"/><path d="M16 3.13a4 4 0 0 1 0 7.75" w-tid="303"/></svg>
+                        <h4 class="font-bold text-sm" w-tid="305">Equipe Ativa</h4>
+                        <p class="text-lg font-black text-blue-400" id="contadorFuncionarios" w-tid="307">4</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2 pt-2" w-tid="309">
+                    <button onclick="abrirModalNovaMesa()" class="w-full bg-emerald-600 hover:bg-emerald-500 p-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2" w-tid="311">
+                        <svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="313"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" w-tid="315"/></svg> Nova Mesa e Zona
+                    </button>
+                    <button onclick="abrirModalProduto()" class="w-full bg-purple-600 hover:bg-purple-500 p-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2" w-tid="317">
+                        <svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="319"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" w-tid="321"/><path d="M7 2v20" w-tid="323"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" w-tid="325"/></svg> Gerir Menu & Produtos
+                    </button>
+                    <button onclick="abrirGestaoEquipe()" class="w-full bg-indigo-600 hover:bg-indigo-500 p-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2" w-tid="327">
+                        <svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="329"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" w-tid="331"/><circle cx="8.5" cy="7" r="4" w-tid="333"/><path d="M20 8v6" w-tid="335"/><path d="M23 11h-6" w-tid="337"/></svg> Gestão de Funcionários
+                    </button>
+                    <button onclick="mostrarFaturacao()" class="w-full bg-amber-600 hover:bg-amber-500 p-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2" w-tid="339">
+                        <svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="341"><rect x="2" y="5" width="20" height="14" rx="2" w-tid="343"/><line x1="2" y1="10" x2="22" y2="10" w-tid="345"/></svg> Facturação
+                    </button>
+                </div>
+                <div class="mt-4" w-tid="347">
+                    <h3 class="text-xs text-gray-400 uppercase font-semibold mb-2" w-tid="349">Lista Global de Produtos & Preços</h3>
+                    <div class="flex gap-2 overflow-x-auto pb-2 mb-2" id="filtroZonaProdutos" w-tid="351"></div>
+                    <div id="listaProdutosAdmin" class="space-y-2" w-tid="353"></div>
+                </div>
+            </section>
+
+            <!-- FORNECEDORES & ENTRADAS -->
+            <section id="area-fornecedores" class="hidden space-y-4" w-tid="355">
+                <div class="flex justify-between items-center mb-2" w-tid="357">
+                    <div class="flex items-center gap-2" w-tid="359">
+                        <button onclick="voltarAoPainel()" class="text-xs bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg" w-tid="361"><svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="363"><line x1="19" y1="12" x2="5" y2="12" w-tid="365"/><polyline points="12 19 5 12 12 5" w-tid="367"/></svg> Voltar ao Painel</button>
+                        <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider" w-tid="369">Fornecedores & Entradas de Produtos</h2>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2" w-tid="371">
+                    <button onclick="abrirModalNovoFornecedor()" class="w-full bg-emerald-600 hover:bg-emerald-500 p-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2" w-tid="373">
+                        <svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="375"><path d="M1 3h15v13H1z" w-tid="377"/><path d="M16 8h4l3 3v5h-7V8z" w-tid="379"/><circle cx="5.5" cy="18.5" r="2.5" w-tid="381"/><circle cx="18.5" cy="18.5" r="2.5" w-tid="383"/></svg> Novo Fornecedor
+                    </button>
+                    <button onclick="abrirModalLancarFactura()" class="w-full bg-amber-600 hover:bg-amber-500 p-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2" w-tid="385">
+                        <svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="387"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" w-tid="389"/><polyline points="14 2 14 8 20 8" w-tid="391"/><line x1="16" y1="13" x2="8" y2="13" w-tid="393"/><line x1="16" y1="17" x2="8" y2="17" w-tid="395"/></svg> Lançar Factura de Entrada
+                    </button>
+                </div>
+
+                <div w-tid="397">
+                    <h3 class="text-xs text-gray-400 uppercase font-semibold mb-2" w-tid="399">Lista de Fornecedores</h3>
+                    <div id="listaFornecedores" class="space-y-2" w-tid="401"></div>
+                </div>
+
+                <div w-tid="403">
+                    <h3 class="text-xs text-gray-400 uppercase font-semibold mb-2" w-tid="405">Facturas de Entrada (Compras)</h3>
+                    <div id="listaFacturasCompra" class="space-y-2 pb-6" w-tid="407"></div>
+                </div>
+            </section>
+
+            <!-- GESTÃO DE EQUIPE -->
+            <section id="area-gestao-equipe" class="hidden space-y-4" w-tid="409">
+                <div class="flex justify-between items-center mb-2" w-tid="411">
+                    <button onclick="fecharGestaoEquipe()" class="text-xs bg-gray-700 px-3 py-1.5 rounded-lg" w-tid="413"><svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="415"><line x1="19" y1="12" x2="5" y2="12" w-tid="417"/><polyline points="12 19 5 12 12 5" w-tid="419"/></svg> Voltar ao Painel</button>
+                    <button onclick="abrirModalNovoFuncionario()" class="bg-emerald-600 hover:bg-emerald-500 text-xs px-3 py-1.5 rounded-lg font-bold" w-tid="421"><svg class="icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" w-tid="423"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" w-tid="425"/><circle cx="8.5" cy="7" r="4" w-tid="427"/><line x1="20" y1="8" x2="20" y2="14" w-tid="429"/><line x1="23" y1="11" x2="17" y2="11" w-tid="431"/></svg> Novo Funcionário</button>
+                </div>
+                <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider" w-tid="433">Controlo de Equipe, Nomes e PINs</h2>
+                <div id="listaEquipeGestao" class="space-y-2.5 pb-6" w-tid="435"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- MODAL GENÉRICO -->
+    <div id="modalGenerico" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50" w-tid="437">
+        <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 w-full max-w-sm shadow-2xl max-h-[90vh] overflow-y-auto" w-tid="439">
+            <h3 id="modalTitulo" class="font-bold text-base mb-3 text-amber-500" w-tid="441">Editar</h3>
+            <div id="modalConteudo" class="space-y-3" w-tid="443"></div>
+            <div class="flex gap-2 mt-4" w-tid="445">
+                <button onclick="fecharModal()" class="flex-1 bg-gray-700 hover:bg-gray-600 py-2.5 rounded-xl font-bold text-xs" w-tid="447">Cancelar</button>
+                <button id="modalBtnSalvar" class="flex-1 bg-amber-500 hover:bg-amber-400 text-black py-2.5 rounded-xl font-bold text-xs" w-tid="449">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script w-tid="451">
+const ICONS = {
+    utensils: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>',
+    cash: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>',
+    tie: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/><path d="M12 14a7 7 0 0 0-7 7h14a7 7 0 0 0-7-7Z"/><path d="m12 5 1 2h2l-1.5 1.5L15 10l-3-1-3 1 1.5-2.5L9 7h2l1-2Z"/></svg>',
+    pie: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 21H3V3"/><path d="M15 3h6v6"/><path d="M21 3 9 15"/></svg>',
+    plus: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>',
+    check: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
+    pen: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>',
+    trash: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>',
+    arrow: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>',
+    minus: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>',
+    xmark: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
+    move: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9V5h4M5 15v4h4m6-16h4v4m0 6v4h-4"/></svg>',
+    truck: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+    doc: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>'
+};
+function icon(name) { return ICONS[name] || ''; }
+
+let utilizadores = JSON.parse(localStorage.getItem('poswd_users')) || [];
+if (utilizadores.length === 0) {
+    utilizadores.push({ codigo: '0000', nome: 'Admin Master', cargo: 'ADMIN', foto: null });
+    localStorage.setItem('poswd_users', JSON.stringify(utilizadores));
+}
+
+let produtos = JSON.parse(localStorage.getItem('poswd_produtos')) || [
+    // ENTRADAS
+    { id: 1, nome: 'Azeitonas', preco: 200, stock: 50, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 2, nome: 'Azeitonas & Queijo', preco: 250, stock: 50, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 3, nome: 'Chamussas', preco: 300, stock: 50, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 4, nome: 'Pastéis de Bacalhau', preco: 250, stock: 50, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 5, nome: 'Camarão Alhinho', preco: 400, stock: 30, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 6, nome: 'Asinhas Picantes', preco: 450, stock: 30, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 7, nome: 'Pão de Alho', preco: 200, stock: 50, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 8, nome: 'Chouriço', preco: 200, stock: 50, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 9, nome: 'Moelas', preco: 250, stock: 30, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 10, nome: 'Dobradinha Branca c/ Feijão Branco', preco: 450, stock: 30, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 11, nome: 'Mão de Vaca c/ Grão de Bico', preco: 450, stock: 30, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 12, nome: 'Fígado à Djambu', preco: 450, stock: 30, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 13, nome: 'Mutxutxu de Frango', preco: 450, stock: 30, categoria: 'Entrada', zona: 'Cozinha' },
+    // SANDES / TOSTAS
+    { id: 14, nome: 'Sandes de Ovo/Queijo', preco: 300, stock: 40, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 15, nome: 'Tosta de Queijo', preco: 150, stock: 40, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 16, nome: 'Tosta de Fiambre', preco: 150, stock: 40, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 17, nome: 'Tosta Mista', preco: 180, stock: 40, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 18, nome: 'Tosta de Atum', preco: 300, stock: 40, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 19, nome: 'Tosta de Frango', preco: 300, stock: 40, categoria: 'Entrada', zona: 'Cozinha' },
+    { id: 20, nome: 'Tosta de Queijo/Fiambre', preco: 200, stock: 40, categoria: 'Entrada', zona: 'Cozinha' },
+    // PRATOS - CARNES / FRANGO
+    { id: 100, nome: 'Prego no Pão', preco: 250, stock: 40, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 101, nome: 'Prego c/ Queijo ou Ovo', preco: 450, stock: 40, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 102, nome: 'Prego Completo c/ Batata Frita', preco: 590, stock: 40, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 103, nome: 'Hambúrguer Simples', preco: 850, stock: 30, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 104, nome: 'Hambúrguer à Djambu', preco: 950, stock: 30, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 105, nome: 'Frango à Passarinho', preco: 900, stock: 20, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 106, nome: '1/2 Frango à Passarinho', preco: 500, stock: 20, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 107, nome: 'Frango Grelhado', preco: 650, stock: 20, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 108, nome: 'Tábua Mix à Djambu', preco: 2300, stock: 10, categoria: 'Comida', zona: 'Cozinha' },
+    // PRATOS - CARNES BOVINAS
+    { id: 110, nome: 'Bife c/ Molho de Natas e Cogumelos', preco: 1100, stock: 15, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 111, nome: 'Bife à Chefe', preco: 1200, stock: 15, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 112, nome: 'Bitoque à Djambu', preco: 1200, stock: 15, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 113, nome: 'T-Bone Grelhado', preco: 1500, stock: 10, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 114, nome: 'Picanha', preco: 1600, stock: 10, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 115, nome: 'Lombo de Vitela Grelhado', preco: 1200, stock: 15, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 116, nome: 'Tornedo c/ Molho de Natas e Cogumelos', preco: 1400, stock: 10, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 117, nome: 'Filé de Beef c/ Fiambre, Cheddar e Ovo', preco: 1300, stock: 10, categoria: 'Comida', zona: 'Cozinha' },
+    // PRATOS - PEIXES / MARISCOS
+    { id: 120, nome: 'Camarão Grelhado', preco: 1200, stock: 15, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 121, nome: 'Lulas Grelhadas/Fritas', preco: 900, stock: 15, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 122, nome: 'Camarão Médio Frito', preco: 1000, stock: 15, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 123, nome: 'Bacalhau à Lagareiro', preco: 1500, stock: 10, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 124, nome: 'Combo de Camarão e Lulas', preco: 1300, stock: 10, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 125, nome: 'Espetada de Mariscos', preco: 1050, stock: 10, categoria: 'Comida', zona: 'Cozinha' },
+    // SALADAS
+    { id: 130, nome: 'Salada Carnívora', preco: 900, stock: 20, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 131, nome: 'Salada Vegetariana', preco: 800, stock: 20, categoria: 'Comida', zona: 'Cozinha' },
+    { id: 132, nome: 'Salada Mexicana', preco: 800, stock: 20, categoria: 'Comida', zona: 'Cozinha' },
+    // SOBREMESAS
+    { id: 200, nome: 'Pão-de-ló', preco: 250, stock: 20, categoria: 'Sobremesa', zona: 'Despensa' },
+    { id: 201, nome: 'Petit Gâteau', preco: 400, stock: 15, categoria: 'Sobremesa', zona: 'Despensa' },
+    { id: 202, nome: 'Mousse de Chocolate', preco: 350, stock: 15, categoria: 'Sobremesa', zona: 'Despensa' },
+    // BEBIDAS S/ ÁLCOOL
+    { id: 300, nome: 'Coca-Cola', preco: 100, stock: 60, categoria: 'Bebida s/Álcool', zona: 'Bar' },
+    { id: 301, nome: 'Sumo a Copo (Ceres, Compal)', preco: 145, stock: 40, categoria: 'Bebida s/Álcool', zona: 'Bar' },
+    { id: 302, nome: 'Sumo Natural (Laranja, Exótico)', preco: 150, stock: 40, categoria: 'Bebida s/Álcool', zona: 'Bar' },
+    { id: 303, nome: 'Água Mineral', preco: 80, stock: 60, categoria: 'Bebida s/Álcool', zona: 'Bar' },
+    // CERVEJAS
+    { id: 400, nome: '2M Lambreta', preco: 120, stock: 60, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 401, nome: 'Heineken Lambreta', preco: 100, stock: 60, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 402, nome: 'Heineken 350ml', preco: 150, stock: 50, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 403, nome: 'Heineken 500ml', preco: 190, stock: 50, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 404, nome: 'Super Bock 200ml', preco: 200, stock: 50, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 405, nome: 'Super Bock 350ml', preco: 250, stock: 50, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    // WHISKY
+    { id: 410, nome: 'JW Red Label (balão)', preco: 250, stock: 30, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 411, nome: 'JW Black Label (balão)', preco: 400, stock: 30, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 412, nome: 'Jameson (balão)', preco: 280, stock: 30, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 413, nome: 'Chivas Regal 12', preco: 400, stock: 20, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    // VODKA
+    { id: 420, nome: 'Absolut Vodka (balão)', preco: 350, stock: 30, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    // LICORES / COCKTAILS
+    { id: 430, nome: 'Amarula', preco: 300, stock: 30, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 431, nome: 'Martini Blanco', preco: 200, stock: 30, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 432, nome: 'Margarita', preco: 450, stock: 20, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 433, nome: 'Tequila Sunrise', preco: 500, stock: 20, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 434, nome: 'Djambu Strawberry', preco: 850, stock: 20, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    // GIN
+    { id: 440, nome: 'Gordons Gin (balão)', preco: 250, stock: 30, categoria: 'Bebida c/Álcool', zona: 'Bar' },
+    { id: 441, nome: 'Beefeater Gin (balão)', preco: 300, stock: 30, categoria: 'Bebida c/Álcool', zona: 'Bar' }
+];
+
+const tinhaBebidaAntiga = produtos.some(p => p.categoria === 'Bebida');
+if (tinhaBebidaAntiga) {
+    produtos.forEach(p => { if (p.categoria === 'Bebida') p.categoria = 'Bebida c/Álcool'; });
+    localStorage.setItem('poswd_produtos', JSON.stringify(produtos));
+}
+
+let mesas = JSON.parse(localStorage.getItem('poswd_mesas')) || [
+    { id: 1, numero: 'Mesa 01', zona: 'Salão', status: 'LIVRE' },
+    { id: 2, numero: 'Mesa 02', zona: 'Salão', status: 'OCUPADA' },
+    { id: 3, numero: 'VIP 01', zona: 'Esplanada', status: 'LIVRE' }
+];
+
+let pedidos = JSON.parse(localStorage.getItem('poswd_pedidos')) || [];
+
+let fornecedores = JSON.parse(localStorage.getItem('poswd_fornecedores')) || [
+    { id: 1, nome: 'Companhia de Cervejas de Moçambique (CDM)', contacto: '', nif: '' },
+    { id: 2, nome: 'Mercearia Central', contacto: '', nif: '' }
+];
+let facturasCompra = JSON.parse(localStorage.getItem('poswd_facturas_compra')) || [];
+let despesas = JSON.parse(localStorage.getItem('poswd_despesas')) || [];
+let clientes = JSON.parse(localStorage.getItem('poswd_clientes')) || [];
+let dividas = JSON.parse(localStorage.getItem('poswd_dividas')) || [];
+let historicoDias = JSON.parse(localStorage.getItem('poswd_historico_dias')) || [];
+
+let dia = JSON.parse(localStorage.getItem('poswd_dia')) || null;
+let sessoes = JSON.parse(localStorage.getItem('poswd_sessoes')) || [];
+if (dia && dia.fecho && !historicoDias.some(h => h.fecho && h.fecho.data === dia.fecho.data)) {
+    historicoDias.push({ id: Date.now(), data: dia.fecho.data.slice(0, 10), abertura: dia.abertura, fecho: dia.fecho, totalDespesas: despesas.filter(d => d.data.slice(0, 10) === dia.fecho.data.slice(0, 10)).reduce((s, d) => s + d.valor, 0) });
+    localStorage.setItem('poswd_historico_dias', JSON.stringify(historicoDias));
+}
+
+function salvarDados() {
+    localStorage.setItem('poswd_users', JSON.stringify(utilizadores));
+    localStorage.setItem('poswd_produtos', JSON.stringify(produtos));
+    localStorage.setItem('poswd_mesas', JSON.stringify(mesas));
+    localStorage.setItem('poswd_pedidos', JSON.stringify(pedidos));
+    localStorage.setItem('poswd_fornecedores', JSON.stringify(fornecedores));
+    localStorage.setItem('poswd_facturas_compra', JSON.stringify(facturasCompra));
+    localStorage.setItem('poswd_despesas', JSON.stringify(despesas));
+    localStorage.setItem('poswd_clientes', JSON.stringify(clientes));
+    localStorage.setItem('poswd_dividas', JSON.stringify(dividas));
+    localStorage.setItem('poswd_historico_dias', JSON.stringify(historicoDias));
+    localStorage.setItem('poswd_dia', JSON.stringify(dia));
+    localStorage.setItem('poswd_sessoes', JSON.stringify(sessoes));
+}
+
+let utilizadorLogado = null;
+let mesaAtiva = null;
+let carrinhoServente = [];
+let categoriaAtivaMenu = 'Entrada';
+let zonaFiltroAtiva = 'TODAS';
+
+window.autenticarPorCodigo = function () {
+    if (!dia || dia.status !== 'ABERTO') {
+        alert('O dia não está aberto. Faça a abertura do dia primeiro.');
+        return;
+    }
+    const codigoInput = document.getElementById('inputCodigo').value.trim();
+    const encontrado = utilizadores.find(u => u.codigo === codigoInput);
+    if (!encontrado) {
+        alert('Código PIN inválido! Tente novamente.');
+        return;
+    }
+    utilizadorLogado = encontrado;
+    abrirSessao(encontrado);
+    document.getElementById('inputCodigo').value = '';
+    document.getElementById('tela-login').classList.add('hidden');
+    document.getElementById('app-container').classList.remove('hidden');
+    document.getElementById('badgePerfil').innerText = `${utilizadorLogado.nome} (${utilizadorLogado.cargo})`;
+    atualizarInterfaceSessao();
+    configurarNavegacao();
+};
+
+window.logout = function () {
+    if (utilizadorLogado && !confirm('Fechar a sua sessão?')) return;
+    fecharSessaoAtual();
+    utilizadorLogado = null;
+    mesaAtiva = null;
+    carrinhoServente = [];
+    document.getElementById('app-container').classList.add('hidden');
+    document.getElementById('infoSessao').classList.add('hidden');
+    document.getElementById('btnFecharDia').classList.add('hidden');
+    const diaAberto = dia && dia.status === 'ABERTO';
+    document.getElementById('tela-login').classList.toggle('hidden', !diaAberto);
+    document.getElementById('tela-dia').classList.toggle('hidden', diaAberto);
+};
+
+/* ===== ABERTURA E FECHO DO DIA + SESSÕES ===== */
+
+function abrirSessao(u) {
+    const ativa = sessoes.find(s => s.codigo === u.codigo && !s.fecho);
+    if (!ativa) {
+        sessoes.push({ id: Date.now(), codigo: u.codigo, nome: u.nome, cargo: u.cargo, abertura: new Date().toISOString(), fecho: null });
+        salvarDados();
+    }
+}
+
+function fecharSessaoAtual() {
+    if (utilizadorLogado) {
+        const s = sessoes.find(x => x.codigo === utilizadorLogado.codigo && !x.fecho);
+        if (s) {
+            s.fecho = new Date().toISOString();
+            salvarDados();
+        }
+    }
+}
+
+function atualizarInterfaceSessao() {
+    const s = utilizadorLogado ? sessoes.find(x => x.codigo === utilizadorLogado.codigo && !x.fecho) : null;
+    const info = document.getElementById('infoSessao');
+    const btn = document.getElementById('btnFecharDia');
+    if (s) {
+        const t = new Date(s.abertura);
+        info.innerText = `Sessão: ${t.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })}`;
+        info.classList.remove('hidden');
+    } else {
+        info.classList.add('hidden');
+    }
+    if (utilizadorLogado && (utilizadorLogado.cargo === 'ADMIN' || utilizadorLogado.cargo === 'CAIXA')) {
+        btn.classList.remove('hidden');
+    } else {
+        btn.classList.add('hidden');
+    }
+}
+
+function atualizarInfoDia() {
+    const elUltimo = document.getElementById('infoUltimoFecho');
+    const elLogin = document.getElementById('infoLoginDia');
+    if (!dia) {
+        if (elUltimo) elUltimo.innerText = '';
+        if (elLogin) elLogin.innerText = '';
+        return;
+    }
+    if (elUltimo) {
+        if (dia.fecho) {
+            const d = new Date(dia.fecho.data);
+            elUltimo.innerText = `Último fecho: ${d.toLocaleDateString('pt-PT')} ${d.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })} por ${dia.fecho.por} | Total: ${(dia.fecho.totalHoje || 0).toFixed(2)} MT`;
+        } else {
+            elUltimo.innerText = '';
+        }
+    }
+    if (elLogin && dia.abertura) {
+        const d = new Date(dia.abertura.data);
+        elLogin.innerText = `Dia aberto às ${d.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })} por ${dia.abertura.por}`;
+    }
+}
+
+window.abrirDia = function () {
+    const codigo = document.getElementById('inputCodigoDia').value.trim();
+    const montante = parseFloat(document.getElementById('inputAberturaMontante').value) || 0;
+    const u = utilizadores.find(x => x.codigo === codigo);
+    if (!u) {
+        alert('Código PIN inválido! Tente novamente.');
+        return;
+    }
+    if (u.cargo !== 'ADMIN' && u.cargo !== 'CAIXA') {
+        alert('Apenas o ADMIN ou o CAIXA pode fazer a abertura do dia.');
+        return;
+    }
+    dia = {
+        status: 'ABERTO',
+        abertura: { data: new Date().toISOString(), montante, por: u.nome, codigo: u.codigo }
+    };
+    salvarDados();
+    document.getElementById('tela-dia').classList.add('hidden');
+    document.getElementById('tela-login').classList.remove('hidden');
+    document.getElementById('inputCodigoDia').value = '';
+    document.getElementById('inputAberturaMontante').value = '';
+    atualizarInfoDia();
+    alert('Dia aberto com sucesso!');
+};
+
+window.fecharDia = function () {
+    if (!dia || dia.status !== 'ABERTO') return;
+    const outrasAbertas = sessoes.filter(s => !s.fecho && s.codigo !== (utilizadorLogado ? utilizadorLogado.codigo : null));
+    if (outrasAbertas.length > 0) {
+        alert(`Existem ${outrasAbertas.length} sessão(ões) de outro(s) utilizador(es) ainda aberta(s). Feche todas as sessões antes de fechar o dia.`);
+        return;
+    }
+    const hoje = new Date().toISOString().slice(0, 10);
+    const pagos = pedidos.filter(p => p.status === 'PAGO' && !p.dividaId && (p.dataPagamento || p.data) && (p.dataPagamento || p.data).slice(0, 10) === hoje);
+    const recebimentosDivida = dividas.reduce((s, d) => s + (d.pagamentos || []).filter(pg => pg.data.slice(0, 10) === hoje).reduce((a, pg) => a + pg.valor, 0), 0);
+    const despesasHoje = despesas.filter(d => d.data.slice(0, 10) === hoje).reduce((s, d) => s + d.valor, 0);
+    const totalHoje = pagos.reduce((s, p) => s + p.total, 0) + recebimentosDivida;
+    const montante = dia.abertura.montante;
+    if (!confirm(`Fechar o dia agora?\n\nAbertura: ${montante.toFixed(2)} MT\nRecibos pagos: ${pagos.length}\nRecebido: ${totalHoje.toFixed(2)} MT\nDespesas: ${despesasHoje.toFixed(2)} MT\nSaldo esperado: ${(montante + totalHoje - despesasHoje).toFixed(2)} MT\n\nConfirma o fecho do dia?`)) return;
+    fecharSessaoAtual();
+    dia.status = 'FECHADO';
+    dia.fecho = {
+        data: new Date().toISOString(),
+        por: utilizadorLogado ? utilizadorLogado.nome : '-',
+        totalHoje,
+        numFacturas: pagos.length,
+        recebimentosDivida
+    };
+    historicoDias.push({
+        id: Date.now(),
+        data: hoje,
+        abertura: dia.abertura,
+        fecho: dia.fecho,
+        totalDespesas: despesasHoje
+    });
+    salvarDados();
+    utilizadorLogado = null;
+    mesaAtiva = null;
+    carrinhoServente = [];
+    document.getElementById('app-container').classList.add('hidden');
+    document.getElementById('infoSessao').classList.add('hidden');
+    document.getElementById('btnFecharDia').classList.add('hidden');
+    document.getElementById('tela-dia').classList.remove('hidden');
+    atualizarInfoDia();
+};
+
+function inicializarDia() {
+    const diaAberto = dia && dia.status === 'ABERTO';
+    document.getElementById('tela-dia').classList.toggle('hidden', diaAberto);
+    document.getElementById('tela-login').classList.toggle('hidden', !diaAberto);
+    atualizarInfoDia();
+}
+
+function configurarNavegacao() {
+    ['area-mesas-geral', 'area-caixa', 'area-faturacao', 'area-supervisor', 'area-admin', 'area-gestao-equipe', 'area-fornecedores', 'area-despesas', 'area-historico-dias', 'area-clientes', 'area-dividas'].forEach(a => {
+        const el = document.getElementById(a);
+        if (el) el.classList.add('hidden');
+    });
+    const nav = document.getElementById('navBar');
+    nav.innerHTML = '';
+    const cargo = utilizadorLogado.cargo;
+
+    if (cargo === 'SERVENTE' || cargo === 'SUPERVISOR' || cargo === 'CAIXA') {
+        document.getElementById('area-mesas-geral').classList.remove('hidden');
+        renderMesasServente();
+        nav.innerHTML += `<button class="flex-1 py-3 text-amber-500 border-b-2 border-amber-500 font-bold">${icon('utensils')} Atendimento / Mesas</button>`;
+    }
+    if (cargo === 'CAIXA' || cargo === 'ADMIN') {
+        const area = document.getElementById('area-caixa');
+        if (area) {
+            area.classList.remove('hidden');
+            renderContasCaixa();
+        }
+        nav.innerHTML += `<button onclick="mostrarFaturacao()" class="flex-1 py-3 text-amber-500 border-b-2 border-amber-500 font-bold">${icon('cash')} Recibos</button>`;
+    }
+    if (cargo === 'CAIXA') {
+        nav.innerHTML += `<button class="flex-1 py-3 text-emerald-500 border-b-2 border-emerald-500 font-bold">${icon('cash')} Caixa & Pagamentos</button>`;
+    } else if (cargo === 'SUPERVISOR') {
+        const area = document.getElementById('area-supervisor');
+        if (area) {
+            area.classList.remove('hidden');
+            renderProdutosGestao('listaProdutosSupervisor');
+        }
+        nav.innerHTML += `<button class="flex-1 py-3 text-blue-500 border-b-2 border-blue-500 font-bold">${icon('tie')} Supervisão</button>`;
+    } else if (cargo === 'ADMIN') {
+        const area = document.getElementById('area-admin');
+        if (area) {
+            area.classList.remove('hidden');
+            document.getElementById('contadorFuncionarios').innerText = utilizadores.length;
+            renderProdutosGestao('listaProdutosAdmin');
+        }
+        nav.innerHTML += `<button class="flex-1 py-3 text-purple-500 border-b-2 border-purple-500 font-bold">${icon('pie')} Painel Administrativo Total</button>`;
+    }
+    if (cargo === 'ADMIN' || cargo === 'SUPERVISOR') {
+        const area = document.getElementById('area-fornecedores');
+        if (area) {
+            area.classList.remove('hidden');
+            renderFornecedores();
+            renderFacturasCompra();
+        }
+        nav.innerHTML += `<button onclick="mostrarFornecedores()" class="flex-1 py-3 text-amber-500 border-b-2 border-amber-500 font-bold">${icon('truck')} Fornecedores</button>`;
+    }
+    if (cargo === 'ADMIN' || cargo === 'CAIXA') {
+        nav.innerHTML += `
+            <button onclick="mostrarAreaExtra('area-despesas')" class="flex-1 py-3 text-rose-400 font-bold">Despesas</button>
+            <button onclick="mostrarAreaExtra('area-historico-dias')" class="flex-1 py-3 text-blue-400 font-bold">Dias</button>
+            <button onclick="mostrarAreaExtra('area-clientes')" class="flex-1 py-3 text-emerald-400 font-bold">Clientes</button>
+            <button onclick="mostrarAreaExtra('area-dividas')" class="flex-1 py-3 text-rose-400 font-bold">Dívidas</button>`;
+    }
+}
+
+function abrirModal(titulo, htmlConteudo, callbackSalvar) {
+    document.getElementById('modalTitulo').innerText = titulo;
+    document.getElementById('modalConteudo').innerHTML = htmlConteudo;
+    document.getElementById('modalGenerico').classList.remove('hidden');
+    document.getElementById('modalBtnSalvar').onclick = () => {
+        if (callbackSalvar()) fecharModal();
+    };
+}
+
+window.fecharModal = function () {
+    document.getElementById('modalGenerico').classList.add('hidden');
+};
+
+function renderMesasServente() {
+    const zonas = ['TODAS', ...new Set(mesas.map(m => m.zona))];
+    const filtroEl = document.getElementById('filtroZonas');
+    filtroEl.innerHTML = zonas.map(z =>
+        `<button onclick="filtrarZona('${z}')" class="px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap ${zonaFiltroAtiva === z ? 'bg-amber-500 text-black' : 'bg-gray-800 text-gray-300 border border-gray-700'}">${z}</button>`
+    ).join('');
+
+    const mesasFiltradas = zonaFiltroAtiva === 'TODAS' ? mesas : mesas.filter(m => m.zona === zonaFiltroAtiva);
+    const grid = document.getElementById('gridMesasServente');
+    grid.innerHTML = mesasFiltradas.map(m => {
+        const pedidosPendentes = pedidos.filter(p => p.mesaId === m.id && p.status === 'ABERTO');
+        const totalPendente = pedidosPendentes.reduce((s, p) => s + p.total, 0);
+        const isOcupada = m.status === 'OCUPADA' || pedidosPendentes.length > 0;
+        return `<div onclick="selecionarMesa(${m.id})" class="p-4 rounded-xl border flex flex-col items-center justify-center gap-1 cursor-pointer ${isOcupada ? 'bg-rose-950/30 border-rose-600/50 text-rose-400' : 'bg-emerald-950/30 border-emerald-600/50 text-emerald-400'}">
+                    <span class="text-base font-black">${m.numero}</span>
+                    <span class="text-[10px] text-gray-400">Zona: ${m.zona}</span>
+                    ${isOcupada ? `<span class="text-[10px] text-amber-400 font-bold">${totalPendente.toFixed(0)} MT</span>` : ''}
+                    <span class="text-[9px] font-bold uppercase mt-1 px-2 py-0.5 rounded bg-black/30">${isOcupada ? 'OCUPADA' : 'LIVRE'}</span>
+                </div>`;
+    }).join('');
+}
+
+window.filtrarZona = function (zona) {
+    zonaFiltroAtiva = zona;
+    renderMesasServente();
+};
+
+window.selecionarMesa = function (id) {
+    const m = mesas.find(item => item.id === id);
+    if (!m) return;
+    const isGestor = utilizadorLogado && (utilizadorLogado.cargo === 'ADMIN' || utilizadorLogado.cargo === 'SUPERVISOR');
+    const pedidosMesa = pedidos.filter(p => p.mesaId === id && p.status === 'ABERTO');
+    if (isGestor && pedidosMesa.length > 0) {
+        abrirGestaoMesa(m, pedidosMesa);
+        return;
+    }
+    mesaAtiva = m;
+    carrinhoServente = [];
+    document.getElementById('sub-servente-mesas').classList.add('hidden');
+    document.getElementById('sub-servente-menu').classList.remove('hidden');
+    document.getElementById('tituloMesaAtiva').innerText = `${m.numero} (${m.zona})`;
+    renderProdutosPorCategoria();
+};
+
+window.voltarParaMesas = function () {
+    document.getElementById('sub-servente-menu').classList.add('hidden');
+    document.getElementById('sub-servente-mesas').classList.remove('hidden');
+    renderMesasServente();
+};
+
+function abrirGestaoMesa(mesa, pedidosMesa) {
+    const todosItens = [];
+    pedidosMesa.forEach(p => {
+        p.itens.forEach((item, idx) => {
+            todosItens.push({ pedidoId: p.id, itemIdx: idx, ...item });
+        });
+    });
+    const totalMesa = todosItens.reduce((s, i) => s + i.preco * i.qtd, 0);
+    const html = `
+        <div class="text-sm font-bold text-amber-500 mb-2">${mesa.numero} (${mesa.zona})</div>
+        <div class="text-xs text-gray-400 mb-3">Total: <span class="text-amber-400 font-bold">${totalMesa.toFixed(2)} MT</span></div>
+        <div class="space-y-2 max-h-60 overflow-y-auto">
+            ${todosItens.map((item, i) => `<div class="bg-gray-900 rounded-lg p-2.5 flex justify-between items-center">
+                <div>
+                    <span class="text-sm font-bold">${item.nome}</span>
+                    <span class="text-xs text-amber-400 block">${item.preco.toFixed(0)} MT x ${item.qtd} = ${(item.preco * item.qtd).toFixed(2)} MT</span>
+                </div>
+                <button onclick="cancelarItemMesa(${item.pedidoId},${item.itemIdx},${mesa.id})" class="bg-rose-700 hover:bg-rose-600 text-white px-2 py-1 rounded-lg text-xs">${icon('xmark')} Cancelar</button>
+            </div>`).join('')}
+        </div>
+        <div class="flex gap-2 mt-4">
+            <button onclick="cancelarPedidoMesaCompleto([${pedidosMesa.map(p => p.id).join(',')}],${mesa.id})" class="flex-1 bg-rose-700 hover:bg-rose-600 text-white py-2.5 rounded-xl font-bold text-xs">${icon('trash')} Cancelar Tudo</button>
+            <button onclick="abrirModalTransferencia(${mesa.id})" class="flex-1 bg-blue-600 hover:bg-blue-500 text-white py-2.5 rounded-xl font-bold text-xs">${icon('move')} Transferir</button>
+        </div>
+    `;
+    abrirModal('Gestão da Mesa', html, () => true);
+}
+
+window.cancelarItemMesa = function (pedidoId, itemIdx, mesaId) {
+    if (!confirm('Cancelar este item da mesa?')) return;
+    const pedido = pedidos.find(p => p.id === pedidoId);
+    if (!pedido) return;
+    const item = pedido.itens[itemIdx];
+    if (!item) return;
+    const prod = produtos.find(p => p.id === item.id);
+    if (prod) prod.stock += item.qtd;
+    pedido.itens.splice(itemIdx, 1);
+    pedido.total = pedido.itens.reduce((s, i) => s + i.preco * i.qtd, 0);
+    if (pedido.itens.length === 0) {
+        pedidos = pedidos.filter(p => p.id !== pedidoId);
+    }
+    const temAbertos = pedidos.some(p => p.mesaId === mesaId && p.status === 'ABERTO');
+    const mesa = mesas.find(m => m.id === mesaId);
+    if (mesa && !temAbertos) mesa.status = 'LIVRE';
+    salvarDados();
+    const m = mesas.find(x => x.id === mesaId);
+    const ps = pedidos.filter(p => p.mesaId === mesaId && p.status === 'ABERTO');
+    if (ps.length > 0) {
+        fecharModal();
+        abrirGestaoMesa(m, ps);
+    } else {
+        fecharModal();
+        renderMesasServente();
+    }
+};
+
+window.cancelarPedidoMesaCompleto = function (pedidosIds, mesaId) {
+    if (!confirm('Cancelar TODOS os pedidos desta mesa? O stock será reposto.')) return;
+    pedidosIds.forEach(id => {
+        const p = pedidos.find(ped => ped.id === id);
+        if (p) {
+            p.itens.forEach(item => {
+                const prod = produtos.find(pr => pr.id === item.id);
+                if (prod) prod.stock += item.qtd;
+            });
+        }
+    });
+    pedidos = pedidos.filter(p => !pedidosIds.includes(p.id));
+    const mesa = mesas.find(m => m.id === mesaId);
+    if (mesa) mesa.status = 'LIVRE';
+    salvarDados();
+    fecharModal();
+    renderMesasServente();
+};
+
+window.abrirModalTransferencia = function (mesaOrigemId) {
+    const outrasMesas = mesas.filter(m => m.id !== mesaOrigemId);
+    const html = `
+        <div class="text-xs text-gray-400 mb-2">Transferir itens da mesa de origem para:</div>
+        <select id="selectMesaDestino" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-3">
+            <option value="">-- Selecione a mesa destino --</option>
+            ${outrasMesas.map(m => `<option value="${m.id}">${m.numero} (${m.zona})</option>`).join('')}
+        </select>
+        <div class="text-xs text-gray-400">Todos os itens em aberto serão transferidos.</div>
+    `;
+    abrirModal('Transferir Itens', html, () => {
+        const destinoId = parseInt(document.getElementById('selectMesaDestino').value);
+        if (!destinoId) { alert('Selecione a mesa destino!'); return false; }
+        const pedidosOrigem = pedidos.filter(p => p.mesaId === mesaOrigemId && p.status === 'ABERTO');
+        if (pedidosOrigem.length === 0) { alert('Nenhum pedido para transferir.'); return false; }
+        const mesaDestino = mesas.find(m => m.id === destinoId);
+        if (!mesaDestino) return false;
+        pedidosOrigem.forEach(p => {
+            p.mesaId = destinoId;
+            p.mesaNome = mesaDestino.numero;
+        });
+        const mesaOrigem = mesas.find(m => m.id === mesaOrigemId);
+        if (mesaOrigem) mesaOrigem.status = 'LIVRE';
+        mesaDestino.status = 'OCUPADA';
+        salvarDados();
+        renderMesasServente();
+        alert('Itens transferidos com sucesso!');
+        return true;
+    });
+};
+
+const TABS_MENU = [
+    { categoria: 'Entrada', id: 'tabEntrada' },
+    { categoria: 'Comida', id: 'tabComida' },
+    { categoria: 'Sobremesa', id: 'tabSobremesa' },
+    { categoria: 'Bebida c/Álcool', id: 'tabBebidaAlcool' },
+    { categoria: 'Bebida s/Álcool', id: 'tabBebidaNaoAlcool' }
+];
+
+window.mudarCategoriaMenu = function (categoria) {
+    categoriaAtivaMenu = categoria;
+    TABS_MENU.forEach(({ categoria: c, id }) => {
+        const tab = document.getElementById(id);
+        if (tab) {
+            tab.className = `py-2 rounded-lg leading-tight ${c === categoria ? 'bg-amber-500 text-black' : 'text-gray-400'}`;
+        }
+    });
+    renderProdutosPorCategoria();
+};
+
+function renderProdutosPorCategoria() {
+    const lista = document.getElementById('listaProdutosServente');
+    const filtrados = produtos.filter(p => p.categoria === categoriaAtivaMenu);
+    if (filtrados.length === 0) {
+        lista.innerHTML = `<div class="text-gray-500 text-center py-8 text-xs">Nenhum produto nesta categoria.</div>`;
+        return;
+    }
+    lista.innerHTML = filtrados.map(p => {
+        const noCarrinho = carrinhoServente.filter(c => c.id === p.id).reduce((s, c) => s + c.qtd, 0);
+        const disponivel = p.stock - noCarrinho > 0;
+        return `<div class="produto-item bg-gray-800 border border-gray-700 rounded-xl p-3 flex justify-between items-center ${disponivel ? 'cursor-pointer' : 'opacity-40'}">
+                    <div class="flex-1">
+                        <span class="text-sm font-bold">${p.nome}</span>
+                        <span class="text-xs text-amber-400 font-bold block">${p.preco.toFixed(0)} MT</span>
+                        <span class="badge-stock text-gray-400">Stock: ${p.stock - noCarrinho}</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="adicionarAoCarrinho(${p.id})" class="bg-amber-500 text-black w-7 h-7 rounded-lg font-bold text-sm flex items-center justify-center" ${disponivel ? '' : 'disabled'}>${icon('plus')}</button>
+                        <span id="qtd-carrinho-${p.id}" class="text-xs font-bold w-4 text-center">${noCarrinho > 0 ? noCarrinho : ''}</span>
+                    </div>
+                </div>`;
+    }).join('');
+    atualizarTotalCarrinho();
+}
+
+window.adicionarAoCarrinho = function (produtoId) {
+    const p = produtos.find(prod => prod.id === produtoId);
+    if (!p) return;
+    const noCarrinho = carrinhoServente.filter(c => c.id === produtoId).reduce((s, c) => s + c.qtd, 0);
+    if (noCarrinho >= p.stock) {
+        alert('Stock insuficiente!');
+        return;
+    }
+    const existente = carrinhoServente.find(c => c.id === produtoId);
+    if (existente) {
+        existente.qtd += 1;
+    } else {
+        carrinhoServente.push({ id: p.id, nome: p.nome, preco: p.preco, qtd: 1 });
+    }
+    renderProdutosPorCategoria();
+};
+
+function atualizarTotalCarrinho() {
+    const total = carrinhoServente.reduce((s, c) => s + c.preco * c.qtd, 0);
+    document.getElementById('totalCarrinhoParcial').innerText = `${total.toFixed(2)} MT`;
+}
+
+window.enviarComanda = function () {
+    if (!mesaAtiva) return;
+    if (carrinhoServente.length === 0) {
+        alert('Adicione itens ao carrinho primeiro!');
+        return;
+    }
+    const total = carrinhoServente.reduce((s, c) => s + c.preco * c.qtd, 0);
+    const pedido = {
+        id: Date.now(),
+        mesaId: mesaAtiva.id,
+        mesaNome: mesaAtiva.numero,
+        itens: [...carrinhoServente],
+        total: total,
+        status: 'ABERTO',
+        data: new Date().toISOString(),
+        servente: utilizadorLogado.nome
+    };
+    carrinhoServente.forEach(c => {
+        const prod = produtos.find(p => p.id === c.id);
+        if (prod) prod.stock -= c.qtd;
+    });
+    pedidos.push(pedido);
+    const mesa = mesas.find(m => m.id === mesaAtiva.id);
+    if (mesa) mesa.status = 'OCUPADA';
+    salvarDados();
+    carrinhoServente = [];
+    renderProdutosPorCategoria();
+    renderMesasServente();
+    alert(`Pedido enviado! Total: ${total.toFixed(2)} MT`);
+    voltarParaMesas();
+};
+
+function renderContasCaixa() {
+    const lista = document.getElementById('listaContasCaixa');
+    const contasAbertas = pedidos.filter(p => p.status === 'ABERTO');
+    if (contasAbertas.length === 0) {
+        lista.innerHTML = `<div class="text-gray-500 text-center py-8 text-xs">Nenhuma conta pendente.</div>`;
+        return;
+    }
+    const porMesa = {};
+    contasAbertas.forEach(p => {
+        if (!porMesa[p.mesaId]) {
+            porMesa[p.mesaId] = { mesaNome: p.mesaNome, itens: [], total: 0, pedidos: [] };
+        }
+        porMesa[p.mesaId].itens.push(...p.itens);
+        porMesa[p.mesaId].total += p.total;
+        porMesa[p.mesaId].pedidos.push(p.id);
+    });
+    lista.innerHTML = Object.values(porMesa).map(m => `
+        <div class="conta-card">
+            <div class="flex justify-between items-center mb-2">
+                <h4 class="font-bold text-sm">${m.mesaNome}</h4>
+                <span class="text-lg font-black text-amber-400">${m.total.toFixed(2)} MT</span>
+            </div>
+            <div class="mb-2">
+                ${m.itens.map(i => `<div class="item-row"><span>${i.nome} x${i.qtd}</span><span>${(i.preco * i.qtd).toFixed(2)} MT</span></div>`).join('')}
+            </div>
+            <button onclick="finalizarConta([${m.pedidos.join(',')}], ${m.total})" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-bold text-xs mt-1">
+                ${icon('check')} Finalizar e Pagar
+            </button>
+        </div>
+    `).join('');
+}
+
+window.finalizarConta = function (pedidosIds, total) {
+    const clientesOptions = clientes.map(c => `<option value="${c.id}">${c.nome}${c.telefone ? ' | ' + c.telefone : ''}</option>`).join('');
+    abrirModal('Finalizar Conta', `
+        <div class="bg-gray-900 rounded-xl p-3 text-center"><span class="text-xs text-gray-400 block">Total da conta</span><strong class="text-2xl text-amber-400">${total.toFixed(2)} MT</strong></div>
+        <label class="text-xs text-gray-400">Cliente (necessário para vender a crédito):</label>
+        <select id="clientePagamento" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white"><option value="">Sem cliente</option>${clientesOptions}</select>
+        <label class="text-xs text-gray-400">Forma de pagamento:</label>
+        <select id="tipoPagamento" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white"><option value="PAGO">Pago agora</option><option value="DIVIDA">A crédito / dívida</option></select>
+    `, () => {
+        const clienteId = parseInt(document.getElementById('clientePagamento').value) || null;
+        const tipo = document.getElementById('tipoPagamento').value;
+        if (tipo === 'DIVIDA' && !clienteId) { alert('Selecione um cliente registado para lançar a dívida.'); return false; }
+        const cliente = clientes.find(c => c.id === clienteId);
+        const agora = new Date().toISOString();
+        const divida = tipo === 'DIVIDA' ? { id: Date.now(), clienteId, clienteNome: cliente.nome, valorOriginal: total, saldo: total, data: agora, por: utilizadorLogado.nome, pedidoIds: [...pedidosIds], pagamentos: [] } : null;
+        pedidosIds.forEach(id => {
+            const pedido = pedidos.find(p => p.id === id);
+            if (pedido) {
+                pedido.status = tipo;
+                pedido.clienteId = clienteId;
+                pedido.clienteNome = cliente ? cliente.nome : '';
+                pedido.dataPagamento = agora;
+                if (divida) pedido.dividaId = divida.id;
+            }
+        });
+        if (divida) dividas.push(divida);
+        const primeiro = pedidos.find(p => p.id === pedidosIds[0]);
+        const mesa = primeiro && mesas.find(m => m.id === primeiro.mesaId);
+        if (mesa && !pedidos.some(p => p.mesaId === mesa.id && p.status === 'ABERTO')) mesa.status = 'LIVRE';
+        salvarDados();
+        renderContasCaixa();
+        renderMesasServente();
+        if (document.getElementById('area-faturacao') && !document.getElementById('area-faturacao').classList.contains('hidden')) renderFacturas();
+        return true;
+    });
+};
+
+function renderProdutosGestao(elementId) {
+    const lista = document.getElementById(elementId);
+    if (!lista) return;
+    const zonas = ['TODAS', 'Bar', 'Cozinha', 'Despensa'];
+    ['filtroZonaProdutos', 'filtroZonaProdutosSup'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.innerHTML = zonas.map(z =>
+                `<button onclick="filtrarZonaProdutos('${z}')" class="px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap ${zonaFiltroProdutos === z ? 'bg-amber-500 text-black' : 'bg-gray-800 text-gray-300 border border-gray-700'}">${z}</button>`
+            ).join('');
+        }
+    });
+    const filtrados = zonaFiltroProdutos === 'TODAS' ? produtos : produtos.filter(p => p.zona === zonaFiltroProdutos);
+    lista.innerHTML = filtrados.map(p => `
+        <div class="conta-card flex justify-between items-center">
+            <div>
+                <span class="text-sm font-bold">${p.nome}</span>
+                <span class="text-xs text-amber-400 block">${p.preco.toFixed(0)} MT | ${p.categoria}</span>
+                <span class="text-xs text-gray-400">Stock: 
+                    <button onclick="ajustarStock(${p.id}, -1)" class="bg-gray-700 hover:bg-gray-600 px-1.5 py-0.5 rounded text-xs">${icon('minus')}</button>
+                    <span class="font-bold text-white mx-1">${p.stock}</span>
+                    <button onclick="ajustarStock(${p.id}, 1)" class="bg-gray-700 hover:bg-gray-600 px-1.5 py-0.5 rounded text-xs">${icon('plus')}</button>
+                </span>
+                <span class="badge-stock ${p.zona === 'Bar' ? 'text-blue-400' : p.zona === 'Cozinha' ? 'text-amber-400' : 'text-emerald-400'}">${p.zona}</span>
+            </div>
+            <div class="flex gap-1.5">
+                <button onclick="editarProduto(${p.id})" class="bg-blue-600 hover:bg-blue-500 text-white px-2.5 py-1.5 rounded-lg text-xs">${icon('pen')}</button>
+                <button onclick="removerProduto(${p.id})" class="bg-rose-700 hover:bg-rose-600 text-white px-2.5 py-1.5 rounded-lg text-xs">${icon('trash')}</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+let zonaFiltroProdutos = 'TODAS';
+
+window.filtrarZonaProdutos = function (zona) {
+    zonaFiltroProdutos = zona;
+    renderProdutosGestao('listaProdutosSupervisor');
+    renderProdutosGestao('listaProdutosAdmin');
+};
+
+window.abrirModalProduto = function () {
+    abrirModal('Adicionar / Editar Produto', `
+        <label class="text-xs text-gray-400">Nome do Produto:</label>
+        <input type="text" id="prodNome" placeholder="Ex: Frango Grelhado" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Preço (MT):</label>
+        <input type="number" id="prodPreco" placeholder="0" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Stock Inicial:</label>
+        <input type="number" id="prodStock" placeholder="0" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Categoria:</label>
+        <select id="prodCategoria" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+            <option value="Entrada">Entrada</option>
+            <option value="Comida">Comida</option>
+            <option value="Sobremesa">Sobremesa</option>
+            <option value="Bebida c/Álcool">Bebidas c/Álcool</option>
+            <option value="Bebida s/Álcool">Bebidas s/Álcool</option>
+        </select>
+        <label class="text-xs text-gray-400">Zona de Preparo/Entrada:</label>
+        <select id="prodZona" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">
+            <option value="Bar">Bar</option>
+            <option value="Cozinha">Cozinha</option>
+            <option value="Despensa">Despensa</option>
+        </select>
+    `, () => {
+        const nome = document.getElementById('prodNome').value.trim();
+        const preco = parseFloat(document.getElementById('prodPreco').value);
+        const stock = parseInt(document.getElementById('prodStock').value) || 0;
+        const categoria = document.getElementById('prodCategoria').value;
+        const zona = document.getElementById('prodZona').value;
+        if (!nome || isNaN(preco) || preco <= 0) {
+            alert('Preencha nome e preço válidos!');
+            return false;
+        }
+        produtos.push({ id: Date.now(), nome, preco, stock, categoria, zona });
+        salvarDados();
+        renderProdutosGestao('listaProdutosSupervisor');
+        renderProdutosGestao('listaProdutosAdmin');
+        return true;
+    });
+};
+
+window.editarProduto = function (id) {
+    const p = produtos.find(prod => prod.id === id);
+    if (!p) return;
+    abrirModal(`Editar: ${p.nome}`, `
+        <label class="text-xs text-gray-400">Nome do Produto:</label>
+        <input type="text" id="prodNomeEdit" value="${p.nome}" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Preço (MT):</label>
+        <input type="number" id="prodPrecoEdit" value="${p.preco}" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Stock:</label>
+        <input type="number" id="prodStockEdit" value="${p.stock}" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Categoria:</label>
+        <select id="prodCategoriaEdit" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+            <option value="Entrada" ${p.categoria === 'Entrada' ? 'selected' : ''}>Entrada</option>
+            <option value="Comida" ${p.categoria === 'Comida' ? 'selected' : ''}>Comida</option>
+            <option value="Sobremesa" ${p.categoria === 'Sobremesa' ? 'selected' : ''}>Sobremesa</option>
+            <option value="Bebida c/Álcool" ${p.categoria === 'Bebida c/Álcool' ? 'selected' : ''}>Bebidas c/Álcool</option>
+            <option value="Bebida s/Álcool" ${p.categoria === 'Bebida s/Álcool' ? 'selected' : ''}>Bebidas s/Álcool</option>
+        </select>
+        <label class="text-xs text-gray-400">Zona de Preparo/Entrada:</label>
+        <select id="prodZonaEdit" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">
+            <option value="Bar" ${p.zona === 'Bar' ? 'selected' : ''}>Bar</option>
+            <option value="Cozinha" ${p.zona === 'Cozinha' ? 'selected' : ''}>Cozinha</option>
+            <option value="Despensa" ${p.zona === 'Despensa' ? 'selected' : ''}>Despensa</option>
+        </select>
+    `, () => {
+        const nome = document.getElementById('prodNomeEdit').value.trim();
+        const preco = parseFloat(document.getElementById('prodPrecoEdit').value);
+        const stock = parseInt(document.getElementById('prodStockEdit').value) || 0;
+        const categoria = document.getElementById('prodCategoriaEdit').value;
+        const zona = document.getElementById('prodZonaEdit').value;
+        if (!nome || isNaN(preco) || preco <= 0) {
+            alert('Preencha nome e preço válidos!');
+            return false;
+        }
+        p.nome = nome;
+        p.preco = preco;
+        p.stock = stock;
+        p.categoria = categoria;
+        p.zona = zona;
+        salvarDados();
+        renderProdutosGestao('listaProdutosSupervisor');
+        renderProdutosGestao('listaProdutosAdmin');
+        renderProdutosPorCategoria();
+        return true;
+    });
+};
+
+window.removerProduto = function (id) {
+    if (!confirm('Tem certeza que deseja remover este produto?')) return;
+    produtos = produtos.filter(p => p.id !== id);
+    salvarDados();
+    renderProdutosGestao('listaProdutosSupervisor');
+    renderProdutosGestao('listaProdutosAdmin');
+    renderProdutosPorCategoria();
+};
+
+window.ajustarStock = function (id, delta) {
+    const p = produtos.find(prod => prod.id === id);
+    if (!p) return;
+    p.stock = Math.max(0, p.stock + delta);
+    salvarDados();
+    renderProdutosGestao('listaProdutosSupervisor');
+    renderProdutosGestao('listaProdutosAdmin');
+    renderProdutosPorCategoria();
+};
+
+window.abrirModalNovaMesa = function () {
+    abrirModal('Adicionar Nova Mesa', `
+        <label class="text-xs text-gray-400">Nome / Número da Mesa:</label>
+        <input type="text" id="novaMesaNome" placeholder="Ex: Mesa 05" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Zona / Setor:</label>
+        <input type="text" id="novaMesaZona" placeholder="Ex: Salão, Esplanada, VIP" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">
+    `, () => {
+        const nome = document.getElementById('novaMesaNome').value.trim();
+        const zona = document.getElementById('novaMesaZona').value.trim() || 'Salão';
+        if (nome) {
+            mesas.push({ id: Date.now(), numero: nome, zona: zona, status: 'LIVRE' });
+            salvarDados();
+            renderMesasServente();
+            return true;
+        }
+        alert('Insira um nome válido para a mesa!');
+        return false;
+    });
+};
+
+window.abrirGestaoEquipe = function () {
+    document.getElementById('area-gestao-equipe').classList.remove('hidden');
+    renderEquipeGestao();
+};
+
+window.fecharGestaoEquipe = function () {
+    document.getElementById('area-gestao-equipe').classList.add('hidden');
+};
+
+function renderEquipeGestao() {
+    const lista = document.getElementById('listaEquipeGestao');
+    lista.innerHTML = utilizadores.map(u => `
+        <div class="empregado-card flex items-center gap-3">
+            <div class="foto-funcionario">
+                ${u.foto ? `<img src="${u.foto}" alt="${u.nome}" class="foto-func-img" onerror="this.style.display='none'">` : `<div class="foto-func-placeholder">${u.nome.charAt(0).toUpperCase()}</div>`}
+            </div>
+            <div class="flex-1">
+                <span class="text-sm font-bold">${u.nome}</span>
+                <span class="text-xs block text-gray-400">${u.cargo} | PIN: ${u.codigo}</span>
+            </div>
+            <div class="flex gap-1.5">
+                <button onclick="editarFuncionario('${u.codigo}')" class="bg-blue-600 hover:bg-blue-500 text-white px-2.5 py-1.5 rounded-lg text-xs">${icon('pen')}</button>
+                <button onclick="removerFuncionario('${u.codigo}')" class="bg-rose-700 hover:bg-rose-600 text-white px-2.5 py-1.5 rounded-lg text-xs">${icon('trash')}</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+window.abrirModalNovoFuncionario = function () {
+    abrirModal('Novo Funcionário', `
+        <label class="text-xs text-gray-400">Nome do Funcionário:</label>
+        <input type="text" id="novoFuncNome" placeholder="Ex: Maria" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">URL da Foto:</label>
+        <input type="text" id="novoFuncFoto" placeholder="https://exemplo.com/foto.jpg" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Cargo:</label>
+        <select id="novoFuncCargo" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+            <option value="SERVENTE">Servente / Garçom</option>
+            <option value="CAIXA">Caixa</option>
+            <option value="SUPERVISOR">Supervisor</option>
+            <option value="ADMIN">Administrador</option>
+        </select>
+        <label class="text-xs text-gray-400">PIN de Acesso (4 dígitos):</label>
+        <input type="text" id="novoFuncPin" placeholder="Ex: 4444" maxlength="4" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">
+    `, () => {
+        const nome = document.getElementById('novoFuncNome').value.trim();
+        const foto = document.getElementById('novoFuncFoto').value.trim();
+        const cargo = document.getElementById('novoFuncCargo').value;
+        const pin = document.getElementById('novoFuncPin').value.trim();
+        if (!nome || !pin || pin.length !== 4) {
+            alert('Preencha nome e PIN de 4 dígitos!');
+            return false;
+        }
+        if (utilizadores.find(u => u.codigo === pin)) {
+            alert('Este PIN já está em uso!');
+            return false;
+        }
+        utilizadores.push({ codigo: pin, nome, foto: foto || null, cargo });
+        salvarDados();
+        renderEquipeGestao();
+        if (document.getElementById('contadorFuncionarios')) {
+            document.getElementById('contadorFuncionarios').innerText = utilizadores.length;
+        }
+        return true;
+    });
+};
+
+window.editarFuncionario = function (codigo) {
+    const u = utilizadores.find(user => user.codigo === codigo);
+    if (!u) return;
+    abrirModal(`Editar: ${u.nome}`, `
+        <label class="text-xs text-gray-400">Nome do Funcionário:</label>
+        <input type="text" id="editFuncNome" value="${u.nome}" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">URL da Foto:</label>
+        <input type="text" id="editFuncFoto" value="${u.foto || ''}" placeholder="https://exemplo.com/foto.jpg" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Cargo:</label>
+        <select id="editFuncCargo" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+            <option value="SERVENTE" ${u.cargo === 'SERVENTE' ? 'selected' : ''}>Servente / Garçom</option>
+            <option value="CAIXA" ${u.cargo === 'CAIXA' ? 'selected' : ''}>Caixa</option>
+            <option value="SUPERVISOR" ${u.cargo === 'SUPERVISOR' ? 'selected' : ''}>Supervisor</option>
+            <option value="ADMIN" ${u.cargo === 'ADMIN' ? 'selected' : ''}>Administrador</option>
+        </select>
+        <label class="text-xs text-gray-400">Novo PIN (4 dígitos):</label>
+        <input type="text" id="editFuncPin" value="${u.codigo}" maxlength="4" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">
+    `, () => {
+        const nome = document.getElementById('editFuncNome').value.trim();
+        const foto = document.getElementById('editFuncFoto').value.trim();
+        const cargo = document.getElementById('editFuncCargo').value;
+        const pin = document.getElementById('editFuncPin').value.trim();
+        if (!nome || !pin || pin.length !== 4) {
+            alert('Preencha nome e PIN de 4 dígitos!');
+            return false;
+        }
+        const conflito = utilizadores.find(user => user.codigo === pin && user.codigo !== codigo);
+        if (conflito) {
+            alert('Este PIN já está em uso por outro funcionário!');
+            return false;
+        }
+        u.nome = nome;
+        u.foto = foto || null;
+        u.cargo = cargo;
+        u.codigo = pin;
+        salvarDados();
+        renderEquipeGestao();
+        if (document.getElementById('contadorFuncionarios')) {
+            document.getElementById('contadorFuncionarios').innerText = utilizadores.length;
+        }
+        return true;
+    });
+};
+
+window.removerFuncionario = function (codigo) {
+    if (codigo === '0000') {
+        alert('Não pode remover o Administrador Master!');
+        return;
+    }
+    if (!confirm('Remover este funcionário?')) return;
+    utilizadores = utilizadores.filter(u => u.codigo !== codigo);
+    salvarDados();
+    renderEquipeGestao();
+    if (document.getElementById('contadorFuncionarios')) {
+        document.getElementById('contadorFuncionarios').innerText = utilizadores.length;
+    }
+};
+
+window.mostrarFaturacao = function () {
+    ['area-mesas-geral', 'area-caixa', 'area-supervisor', 'area-admin', 'area-gestao-equipe', 'area-faturacao', 'area-fornecedores', 'area-despesas', 'area-historico-dias', 'area-clientes', 'area-dividas'].forEach(a => {
+        const el = document.getElementById(a);
+        if (el) el.classList.add('hidden');
+    });
+    document.getElementById('area-faturacao').classList.remove('hidden');
+    renderFacturas();
+};
+
+window.voltarAoPainel = function () {
+    const cargo = utilizadorLogado.cargo;
+    ['area-mesas-geral', 'area-caixa', 'area-supervisor', 'area-admin', 'area-gestao-equipe', 'area-faturacao', 'area-fornecedores', 'area-despesas', 'area-historico-dias', 'area-clientes', 'area-dividas'].forEach(a => {
+        const el = document.getElementById(a);
+        if (el) el.classList.add('hidden');
+    });
+    if (cargo === 'SERVENTE' || cargo === 'SUPERVISOR' || cargo === 'CAIXA') {
+        document.getElementById('area-mesas-geral').classList.remove('hidden');
+    }
+    if (cargo === 'CAIXA' || cargo === 'ADMIN') {
+        document.getElementById('area-caixa').classList.remove('hidden');
+    }
+    if (cargo === 'SUPERVISOR') {
+        document.getElementById('area-supervisor').classList.remove('hidden');
+    }
+    if (cargo === 'ADMIN') {
+        document.getElementById('area-admin').classList.remove('hidden');
+    }
+    if (cargo === 'ADMIN' || cargo === 'SUPERVISOR') {
+        document.getElementById('area-fornecedores').classList.remove('hidden');
+    }
+};
+
+window.mostrarAreaExtra = function (areaId) {
+    ['area-mesas-geral', 'area-caixa', 'area-supervisor', 'area-admin', 'area-gestao-equipe', 'area-faturacao', 'area-fornecedores', 'area-despesas', 'area-historico-dias', 'area-clientes', 'area-dividas'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+    });
+    const area = document.getElementById(areaId);
+    if (area) area.classList.remove('hidden');
+    if (areaId === 'area-despesas') renderDespesas();
+    if (areaId === 'area-historico-dias') renderHistoricoDias();
+    if (areaId === 'area-clientes') renderClientes();
+    if (areaId === 'area-dividas') renderDividas();
+};
+
+let filtroZonaFacturas = 'TODAS';
+
+function renderFacturas() {
+    const pagos = pedidos.filter(p => p.status === 'PAGO' || p.status === 'DIVIDA');
+    const hoje = new Date().toISOString().slice(0, 10);
+    const facturasHoje = pagos.filter(p => p.status === 'PAGO' && !p.dividaId && (p.dataPagamento || p.data) && (p.dataPagamento || p.data).slice(0, 10) === hoje);
+    document.getElementById('contadorFacturasHoje').innerText = facturasHoje.length;
+    document.getElementById('totalFacturasHoje').innerText = `${facturasHoje.reduce((s, p) => s + p.total, 0).toFixed(2)} MT`;
+    document.getElementById('totalFacturasGeral').innerText = `${pedidos.filter(p => p.status === 'PAGO').reduce((s, p) => s + p.total, 0).toFixed(2)} MT`;
+
+    const zonas = ['TODAS', 'Bar', 'Cozinha', 'Despensa'];
+    const filtroEl = document.getElementById('filtroZonasFacturas');
+    if (filtroEl) {
+        filtroEl.innerHTML = zonas.map(z =>
+            `<button onclick="filtrarFacturas('${z}')" class="px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap ${filtroZonaFacturas === z ? 'bg-amber-500 text-black' : 'bg-gray-800 text-gray-300 border border-gray-700'}">${z}</button>`
+        ).join('');
+    }
+
+    let filtrados = pagos;
+    if (filtroZonaFacturas !== 'TODAS') {
+        filtrados = pagos.filter(p => {
+            return p.itens && p.itens.some(item => {
+                const prod = produtos.find(pr => pr.id === item.id);
+                return prod && prod.zona === filtroZonaFacturas;
+            });
+        });
+    }
+
+    const lista = document.getElementById('listaFacturas');
+    if (filtrados.length === 0) {
+        lista.innerHTML = `<div class="text-gray-500 text-center py-8 text-xs">Nenhuma factura encontrada.</div>`;
+        return;
+    }
+
+    lista.innerHTML = filtrados.sort((a, b) => new Date(b.data) - new Date(a.data)).map(p => {
+        const data = new Date(p.data);
+        const dataStr = data.toLocaleDateString('pt-PT') + ' ' + data.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+        return `<div class="conta-card">
+            <div class="flex justify-between items-center mb-2">
+                <div>
+                    <h4 class="font-bold text-sm">Recibo #${p.id}</h4>
+                    <span class="text-[10px] text-gray-400">${p.mesaNome} | ${dataStr}${p.clienteNome ? ' | ' + p.clienteNome : ''}</span>
+                </div>
+                <div class="text-right"><span class="text-lg font-black text-amber-400 block">${p.total.toFixed(2)} MT</span><span class="text-[10px] ${p.status === 'DIVIDA' ? 'text-rose-400' : 'text-emerald-400'}">${p.status === 'DIVIDA' ? 'A crédito' : 'Pago'}</span></div>
+            </div>
+            <div class="mb-2">
+                ${p.itens.map(i => {
+                    const prod = produtos.find(pr => pr.id === i.id);
+                    const zona = prod ? prod.zona : '';
+                    return `<div class="item-row">
+                        <span>${i.nome} x${i.qtd}</span>
+                        <span>${(i.preco * i.qtd).toFixed(2)} MT ${zona ? `<span class="badge-stock ${zona === 'Bar' ? 'text-blue-400' : zona === 'Cozinha' ? 'text-amber-400' : 'text-emerald-400'}">${zona}</span>` : ''}</span>
+                    </div>`;
+                }).join('')}
+            </div>
+            <div class="flex justify-between items-center text-[10px] text-gray-400">
+                <span>Servente: ${p.servente || '-'}</span>
+                <button onclick="imprimirFactura(${p.id})" class="bg-blue-600 hover:bg-blue-500 text-white px-2.5 py-1 rounded-lg text-xs">${icon('pen')} Imprimir</button>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+window.filtrarFacturas = function (zona) {
+    filtroZonaFacturas = zona;
+    renderFacturas();
+};
+
+window.imprimirFactura = function (pedidoId) {
+    const p = pedidos.find(ped => ped.id === pedidoId);
+    if (!p) return;
+    const data = new Date(p.data);
+    const dataStr = data.toLocaleDateString('pt-PT') + ' ' + data.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+    const total = p.total.toFixed(2);
+    let html = `
+        <html>
+        <head><meta charset="utf-8"><title>Recibo #${p.id}</title>
+        <style>
+            body { font-family: 'Courier New', monospace; font-size: 12px; max-width: 300px; margin: 0 auto; padding: 20px; }
+            h1 { text-align: center; font-size: 16px; margin-bottom: 4px; }
+            .header { text-align: center; font-size: 10px; color: #555; margin-bottom: 12px; }
+            .linha { border-top: 1px dashed #000; margin: 8px 0; }
+            .item { display: flex; justify-content: space-between; font-size: 11px; }
+            .total { display: flex; justify-content: space-between; font-size: 14px; font-weight: bold; margin-top: 8px; }
+            .footer { text-align: center; font-size: 10px; color: #555; margin-top: 16px; }
+            table { width: 100%; border-collapse: collapse; }
+            td { padding: 2px 0; }
+            .qtd { text-align: center; }
+            .preco { text-align: right; }
+        </style>
+        </head>
+        <body>
+            <h1>POSWD</h1>
+            <div class="header">${dataStr}<br>${p.mesaNome} | Servente: ${p.servente || '-'}${p.clienteNome ? '<br>Cliente: ' + p.clienteNome : ''}<br>Pagamento: ${p.status === 'DIVIDA' ? 'A crédito' : 'Pago'}</div>
+            <div class="linha"></div>
+            <table>
+                <tr><th style="text-align:left">Item</th><th class="qtd">Qtd</th><th class="preco">Valor</th></tr>
+                ${p.itens.map(i => `<tr><td>${i.nome}</td><td class="qtd">${i.qtd}</td><td class="preco">${(i.preco * i.qtd).toFixed(2)} MT</td></tr>`).join('')}
+            </table>
+            <div class="linha"></div>
+            <div class="total"><span>TOTAL</span><span>${total} MT</span></div>
+            <div class="footer">Obrigado pela preferência!</div>
+            <script>window.print();window.close();<\\/script>
+        </body>
+        </html>
+    `;
+    const win = window.open('', '_blank');
+    win.document.write(html);
+    win.document.close();
+};
+
+window.exportarFacturasCSV = function () {
+    const pagos = pedidos.filter(p => p.status === 'PAGO' || p.status === 'DIVIDA');
+    if (pagos.length === 0) { alert('Nenhuma factura para exportar.'); return; }
+    let csv = 'ID,Data,Mesa,Servente,Itens,Total (MT)\n';
+    pagos.forEach(p => {
+        const data = new Date(p.data).toLocaleDateString('pt-PT');
+        const itens = p.itens.map(i => `${i.nome} x${i.qtd}`).join('; ');
+        csv += `${p.id},${data},${p.mesaNome},${p.servente || '-'},"${itens}",${p.total.toFixed(2)}\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `facturas_${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+};
+
+/* ===== FORNECEDORES & ENTRADAS DE PRODUTOS (Admin / Supervisor) ===== */
+
+window.mostrarFornecedores = function () {
+    ['area-mesas-geral', 'area-caixa', 'area-supervisor', 'area-admin', 'area-gestao-equipe', 'area-faturacao', 'area-fornecedores', 'area-despesas', 'area-historico-dias', 'area-clientes', 'area-dividas'].forEach(a => {
+        const el = document.getElementById(a);
+        if (el) el.classList.add('hidden');
+    });
+    document.getElementById('area-fornecedores').classList.remove('hidden');
+    renderFornecedores();
+    renderFacturasCompra();
+};
+
+function renderFornecedores() {
+    const lista = document.getElementById('listaFornecedores');
+    if (!lista) return;
+    if (fornecedores.length === 0) {
+        lista.innerHTML = `<div class="text-gray-500 text-center py-6 text-xs">Nenhum fornecedor registado.</div>`;
+        return;
+    }
+    lista.innerHTML = fornecedores.map(f => `
+        <div class="empregado-card flex items-center gap-3">
+            <div class="foto-funcionario">
+                <div class="foto-func-placeholder">${icon('truck')}</div>
+            </div>
+            <div class="flex-1">
+                <span class="text-sm font-bold">${f.nome}</span>
+                <span class="text-xs block text-gray-400">${f.contacto || 'Sem contacto'}${f.nif ? ' | NIF: ' + f.nif : ''}</span>
+            </div>
+            <div class="flex gap-1.5">
+                <button onclick="editarFornecedor(${f.id})" class="bg-blue-600 hover:bg-blue-500 text-white px-2.5 py-1.5 rounded-lg text-xs">${icon('pen')}</button>
+                <button onclick="removerFornecedor(${f.id})" class="bg-rose-700 hover:bg-rose-600 text-white px-2.5 py-1.5 rounded-lg text-xs">${icon('trash')}</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+window.abrirModalNovoFornecedor = function () {
+    abrirModal('Novo Fornecedor', `
+        <label class="text-xs text-gray-400">Nome / Razão Social:</label>
+        <input type="text" id="fornNome" placeholder="Ex: Mercearia Central" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Contacto / Telefone:</label>
+        <input type="text" id="fornContacto" placeholder="Ex: 84 000 0000" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">NIF:</label>
+        <input type="text" id="fornNif" placeholder="Opcional" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">
+    `, () => {
+        const nome = document.getElementById('fornNome').value.trim();
+        const contacto = document.getElementById('fornContacto').value.trim();
+        const nif = document.getElementById('fornNif').value.trim();
+        if (!nome) { alert('Indique o nome do fornecedor!'); return false; }
+        fornecedores.push({ id: Date.now(), nome, contacto, nif });
+        salvarDados();
+        renderFornecedores();
+        return true;
+    });
+};
+
+window.editarFornecedor = function (id) {
+    const f = fornecedores.find(x => x.id === id);
+    if (!f) return;
+    abrirModal(`Editar: ${f.nome}`, `
+        <label class="text-xs text-gray-400">Nome / Razão Social:</label>
+        <input type="text" id="fornNomeEdit" value="${f.nome}" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">Contacto / Telefone:</label>
+        <input type="text" id="fornContactoEdit" value="${f.contacto || ''}" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+        <label class="text-xs text-gray-400">NIF:</label>
+        <input type="text" id="fornNifEdit" value="${f.nif || ''}" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">
+    `, () => {
+        const nome = document.getElementById('fornNomeEdit').value.trim();
+        const contacto = document.getElementById('fornContactoEdit').value.trim();
+        const nif = document.getElementById('fornNifEdit').value.trim();
+        if (!nome) { alert('Indique o nome do fornecedor!'); return false; }
+        f.nome = nome;
+        f.contacto = contacto;
+        f.nif = nif;
+        salvarDados();
+        renderFornecedores();
+        return true;
+    });
+};
+
+window.removerFornecedor = function (id) {
+    if (!confirm('Remover este fornecedor?')) return;
+    fornecedores = fornecedores.filter(x => x.id !== id);
+    salvarDados();
+    renderFornecedores();
+};
+
+let carrinhoEntrada = [];
+
+function renderLinhasEntrada() {
+    const container = document.getElementById('linhasEntrada');
+    if (!container) return;
+    if (carrinhoEntrada.length === 0) {
+        container.innerHTML = `<div class="text-gray-500 text-center py-4 text-xs">Nenhum artigo adicionado. Selecione um artigo abaixo.</div>`;
+    } else {
+        container.innerHTML = carrinhoEntrada.map((l, idx) => `
+            <div class="bg-gray-900 rounded-lg p-2.5 mb-1.5 flex justify-between items-center">
+                <div>
+                    <span class="text-sm font-bold">${l.nome}</span>
+                    <span class="text-[10px] text-amber-400 block">${l.custo.toFixed(0)} MT x ${l.qtd}</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-sm font-black text-emerald-400">${(l.custo * l.qtd).toFixed(2)} MT</span>
+                    <button onclick="removerLinhaEntrada(${idx})" class="bg-rose-700 hover:bg-rose-600 text-white px-2 py-1 rounded-lg text-xs">${icon('xmark')}</button>
+                </div>
+            </div>
+        `).join('');
+    }
+    const total = carrinhoEntrada.reduce((s, l) => s + l.custo * l.qtd, 0);
+    document.getElementById('totalEntrada').innerText = `${total.toFixed(2)} MT`;
+}
+
+window.adicionarLinhaEntrada = function () {
+    const prodId = parseInt(document.getElementById('facProduto').value);
+    const prod = produtos.find(p => p.id === prodId);
+    if (!prod) { alert('Selecione um artigo!'); return; }
+    const qtd = parseInt(document.getElementById('facQtd').value);
+    const custo = parseFloat(document.getElementById('facCusto').value);
+    if (!qtd || qtd <= 0) { alert('Indique uma quantidade válida!'); return; }
+    const precoCusto = isNaN(custo) || custo <= 0 ? prod.preco : custo;
+    const existente = carrinhoEntrada.find(l => l.id === prod.id);
+    if (existente) {
+        existente.qtd += qtd;
+        existente.custo = precoCusto;
+    } else {
+        carrinhoEntrada.push({ id: prod.id, nome: prod.nome, qtd, custo: precoCusto });
+    }
+    document.getElementById('facQtd').value = '';
+    document.getElementById('facCusto').value = '';
+    renderLinhasEntrada();
+};
+
+window.removerLinhaEntrada = function (idx) {
+    carrinhoEntrada.splice(idx, 1);
+    renderLinhasEntrada();
+};
+
+window.abrirModalLancarFactura = function () {
+    if (fornecedores.length === 0) {
+        alert('Registe primeiro um fornecedor!');
+        abrirModalNovoFornecedor();
+        return;
+    }
+    if (produtos.length === 0) {
+        alert('Não existem produtos para receber entrada.');
+        return;
+    }
+    carrinhoEntrada = [];
+    const html = `
+        <label class="text-xs text-gray-400">Fornecedor:</label>
+        <select id="facFornecedor" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-2">
+            ${fornecedores.map(f => `<option value="${f.id}">${f.nome}</option>`).join('')}
+        </select>
+        <label class="text-xs text-gray-400">Nº Factura / Referência (opcional):</label>
+        <input type="text" id="facReferencia" placeholder="Ex: FAT-2026-001" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white mb-3">
+
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-2.5 mb-3">
+            <div class="text-xs text-gray-400 mb-2">Adicionar artigo à factura</div>
+            <select id="facProduto" class="w-full bg-gray-900 border border-gray-700 p-2 rounded-xl text-white mb-2">
+                <option value="">-- Selecione o artigo --</option>
+                ${produtos.map(p => `<option value="${p.id}">${p.nome} (${p.categoria})</option>`).join('')}
+            </select>
+            <div class="flex gap-2 mb-2">
+                <input type="number" id="facQtd" min="0" placeholder="Qtd" class="flex-1 bg-gray-900 border border-gray-700 p-2 rounded-xl text-white">
+                <input type="number" id="facCusto" min="0" placeholder="Custo/Unit (MT)" class="flex-1 bg-gray-900 border border-gray-700 p-2 rounded-xl text-white">
+            </div>
+            <button onclick="adicionarLinhaEntrada()" class="w-full bg-blue-600 hover:bg-blue-500 text-white py-2 rounded-lg font-bold text-xs">${icon('plus')} Adicionar Linha</button>
+        </div>
+
+        <div class="text-xs text-gray-400 mb-1">Artigos da factura</div>
+        <div id="linhasEntrada" class="mb-2"></div>
+        <div class="flex justify-between items-center bg-gray-800 border border-gray-700 rounded-xl p-3">
+            <span class="text-xs text-gray-400">Total da Entrada</span>
+            <span id="totalEntrada" class="text-lg font-black text-emerald-400">0.00 MT</span>
+        </div>
+    `;
+    abrirModal('Lançar Factura de Entrada', html, () => {
+        const fornId = parseInt(document.getElementById('facFornecedor').value);
+        const ref = document.getElementById('facReferencia').value.trim();
+        const fornecedor = fornecedores.find(x => x.id === fornId);
+        if (!fornecedor) { alert('Selecione o fornecedor!'); return false; }
+        if (carrinhoEntrada.length === 0) { alert('Adicione pelo menos um artigo à factura!'); return false; }
+        const itens = carrinhoEntrada.map(l => ({ id: l.id, nome: l.nome, qtd: l.qtd, custo: l.custo }));
+        const total = itens.reduce((s, i) => s + i.custo * i.qtd, 0);
+        itens.forEach(i => {
+            const prod = produtos.find(p => p.id === i.id);
+            if (prod) prod.stock += i.qtd;
+        });
+        facturasCompra.push({
+            id: Date.now(),
+            fornecedorId: fornecedor.id,
+            fornecedor: fornecedor.nome,
+            referencia: ref || `ENT-${Date.now()}`,
+            data: new Date().toISOString(),
+            itens,
+            total,
+            lancadoPor: utilizadorLogado ? utilizadorLogado.nome : '-'
+        });
+        salvarDados();
+        renderFacturasCompra();
+        renderProdutosGestao('listaProdutosSupervisor');
+        renderProdutosGestao('listaProdutosAdmin');
+        alert(`Factura lançada! Total: ${total.toFixed(2)} MT. Stock actualizado.`);
+        return true;
+    });
+};
+
+function renderFacturasCompra() {
+    const lista = document.getElementById('listaFacturasCompra');
+    if (!lista) return;
+    if (facturasCompra.length === 0) {
+        lista.innerHTML = `<div class="text-gray-500 text-center py-6 text-xs">Nenhuma factura de entrada lançada.</div>`;
+        return;
+    }
+    lista.innerHTML = facturasCompra.slice().sort((a, b) => new Date(b.data) - new Date(a.data)).map(f => {
+        const data = new Date(f.data);
+        const dataStr = data.toLocaleDateString('pt-PT') + ' ' + data.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+        return `<div class="conta-card">
+            <div class="flex justify-between items-center mb-2">
+                <div>
+                    <h4 class="font-bold text-sm">${f.referencia}</h4>
+                    <span class="text-[10px] text-gray-400">${f.fornecedor} | ${dataStr}</span>
+                </div>
+                <span class="text-lg font-black text-emerald-400">${f.total.toFixed(2)} MT</span>
+            </div>
+            <div class="mb-2">
+                ${f.itens.map(i => `<div class="item-row"><span>${i.nome} x${i.qtd}</span><span>${(i.custo * i.qtd).toFixed(2)} MT</span></div>`).join('')}
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-[10px] text-gray-400">Lançado por: ${f.lancadoPor || '-'}</span>
+                <button onclick="anularFacturaCompra(${f.id})" class="bg-rose-700 hover:bg-rose-600 text-white px-2.5 py-1 rounded-lg text-xs">${icon('trash')} Anular</button>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+window.anularFacturaCompra = function (id) {
+    const f = facturasCompra.find(x => x.id === id);
+    if (!f) return;
+    if (!confirm(`Anular a factura "${f.referencia}"? O stock será reposto.`)) return;
+    f.itens.forEach(i => {
+        const prod = produtos.find(p => p.id === i.id);
+        if (prod) prod.stock -= i.qtd;
+    });
+    facturasCompra = facturasCompra.filter(x => x.id !== id);
+    salvarDados();
+    renderFacturasCompra();
+    renderProdutosGestao('listaProdutosSupervisor');
+    renderProdutosGestao('listaProdutosAdmin');
+};
+
+/* ===== DESPESAS, HISTÓRICO, CLIENTES E DÍVIDAS ===== */
+function formatarDataHora(valor) {
+    const d = new Date(valor);
+    return d.toLocaleDateString('pt-PT') + ' ' + d.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+}
+
+window.abrirModalDespesa = function () {
+    abrirModal('Registar Despesa',
+        '<label class="text-xs text-gray-400">Descrição:</label>' +
+        '<input id="despesaDescricao" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white" placeholder="Ex: compra de gelo">' +
+        '<label class="text-xs text-gray-400">Categoria:</label>' +
+        '<input id="despesaCategoria" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white" placeholder="Ex: Operação, transporte">' +
+        '<label class="text-xs text-gray-400">Valor (MT):</label>' +
+        '<input id="despesaValor" type="number" min="0.01" step="0.01" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white" placeholder="0.00">', () => {
+        const descricao = document.getElementById('despesaDescricao').value.trim();
+        const categoria = document.getElementById('despesaCategoria').value.trim() || 'Geral';
+        const valor = parseFloat(document.getElementById('despesaValor').value);
+        if (!descricao || !Number.isFinite(valor) || valor <= 0) { alert('Informe a descrição e um valor válido.'); return false; }
+        despesas.push({ id: Date.now(), descricao, categoria, valor, data: new Date().toISOString(), por: utilizadorLogado.nome });
+        salvarDados();
+        renderDespesas();
+        return true;
+    });
+};
+
+function renderDespesas() {
+    const lista = document.getElementById('listaDespesas');
+    if (!lista) return;
+    const hoje = new Date().toISOString().slice(0, 10);
+    const doDia = despesas.filter(d => d.data.slice(0, 10) === hoje);
+    const registos = despesas.slice().sort((a, b) => new Date(b.data) - new Date(a.data));
+    document.getElementById('totalDespesasHoje').innerText = doDia.reduce((s, d) => s + d.valor, 0).toFixed(2) + ' MT';
+    lista.innerHTML = registos.length ? registos.map(d =>
+        '<div class="conta-card flex justify-between items-center gap-3"><div><strong class="text-sm">' + d.descricao + '</strong><span class="block text-xs text-gray-400">' + d.categoria + ' · ' + formatarDataHora(d.data) + ' · ' + (d.por || '-') + '</span></div><div class="text-right"><strong class="text-rose-400">' + d.valor.toFixed(2) + ' MT</strong><button onclick="removerDespesa(' + d.id + ')" class="block ml-auto mt-1 bg-gray-700 px-2 py-1 rounded text-xs">Anular</button></div></div>'
+    ).join('') : '<div class="text-gray-500 text-center py-8 text-xs">Sem despesas registadas hoje.</div>';
+}
+
+window.removerDespesa = function (id) {
+    if (!confirm('Anular esta despesa?')) return;
+    despesas = despesas.filter(d => d.id !== id);
+    salvarDados();
+    renderDespesas();
+};
+
+function renderHistoricoDias() {
+    const lista = document.getElementById('listaHistoricoDias');
+    if (!lista) return;
+    const registos = historicoDias.slice().sort((a, b) => new Date(b.fecho.data) - new Date(a.fecho.data));
+    lista.innerHTML = registos.length ? registos.map(h =>
+        '<div class="conta-card"><div class="flex justify-between items-center mb-2"><strong>' + new Date(h.data + 'T00:00:00').toLocaleDateString('pt-PT') + '</strong><span class="text-emerald-400 font-bold">Recebido: ' + (h.fecho.totalHoje || 0).toFixed(2) + ' MT</span></div>' +
+        '<div class="item-row"><span>Recibos pagos</span><span>' + (h.fecho.numFacturas || 0) + '</span></div>' +
+        '<div class="item-row"><span>Abertura</span><span>' + (h.abertura.montante || 0).toFixed(2) + ' MT · ' + (h.abertura.por || '-') + '</span></div>' +
+        '<div class="item-row"><span>Despesas</span><span class="text-rose-400">' + (h.totalDespesas || 0).toFixed(2) + ' MT</span></div>' +
+        '<div class="item-row"><span>Saldo esperado</span><strong>' + ((h.abertura.montante || 0) + (h.fecho.totalHoje || 0) - (h.totalDespesas || 0)).toFixed(2) + ' MT</strong></div>' +
+        '<span class="block mt-2 text-[10px] text-gray-500">Fechado às ' + new Date(h.fecho.data).toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' }) + ' por ' + (h.fecho.por || '-') + '</span></div>'
+    ).join('') : '<div class="text-gray-500 text-center py-8 text-xs">Ainda não existem dias fechados.</div>';
+}
+
+window.exportarHistoricoDiasCSV = function () {
+    if (!historicoDias.length) { alert('Ainda não existe histórico para exportar.'); return; }
+    const linhas = ['Data,Recibos,Recebido (MT),Abertura (MT),Despesas (MT),Saldo esperado (MT),Fechado por'];
+    historicoDias.forEach(h => {
+        const total = h.fecho.totalHoje || 0;
+        const despesasDia = h.totalDespesas || 0;
+        linhas.push([h.data, h.fecho.numFacturas || 0, total.toFixed(2), (h.abertura.montante || 0).toFixed(2), despesasDia.toFixed(2), ((h.abertura.montante || 0) + total - despesasDia).toFixed(2), '"' + (h.fecho.por || '').replaceAll('"', '""') + '"'].join(','));
+    });
+    const url = URL.createObjectURL(new Blob([linhas.join(String.fromCharCode(10))], { type: 'text/csv;charset=utf-8' }));
+    const a = document.createElement('a'); a.href = url; a.download = 'historico_dias.csv'; a.click(); URL.revokeObjectURL(url);
+};
+
+window.abrirModalCliente = function (id = null) {
+    const cliente = clientes.find(c => c.id === id);
+    const prefixo = cliente ? 'editCliente' : 'novoCliente';
+    const conteudo = '<label class="text-xs text-gray-400">Nome:</label><input id="' + prefixo + 'Nome" value="' + (cliente ? cliente.nome : '') + '" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">' +
+        '<label class="text-xs text-gray-400">Telefone:</label><input id="' + prefixo + 'Telefone" value="' + (cliente ? cliente.telefone || '' : '') + '" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">' +
+        '<label class="text-xs text-gray-400">Nuit (opcional):</label><input id="' + prefixo + 'Nuit" value="' + (cliente ? cliente.nuit || '' : '') + '" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">';
+    abrirModal(cliente ? 'Editar Cliente' : 'Novo Cliente', conteudo, () => {
+        const nome = document.getElementById(prefixo + 'Nome').value.trim();
+        const telefone = document.getElementById(prefixo + 'Telefone').value.trim();
+        const nuit = document.getElementById(prefixo + 'Nuit').value.trim();
+        if (!nome) { alert('Indique o nome do cliente.'); return false; }
+        if (cliente) Object.assign(cliente, { nome, telefone, nuit });
+        else clientes.push({ id: Date.now(), nome, telefone, nuit, criado: new Date().toISOString() });
+        salvarDados();
+        renderClientes();
+        return true;
+    });
+};
+
+function renderClientes() {
+    const lista = document.getElementById('listaClientes');
+    if (!lista) return;
+    const termo = (document.getElementById('pesquisaClientes')?.value || '').toLocaleLowerCase();
+    const filtrados = clientes.filter(c => (c.nome + ' ' + (c.telefone || '')).toLocaleLowerCase().includes(termo));
+    lista.innerHTML = filtrados.length ? filtrados.map(c => {
+        const saldo = dividas.filter(d => d.clienteId === c.id && d.status !== 'PAGA').reduce((s, d) => s + d.saldo, 0);
+        return '<div class="empregado-card flex justify-between items-center gap-3"><div><strong>' + c.nome + '</strong><span class="block text-xs text-gray-400">' + (c.telefone || 'Sem telefone') + (c.nuit ? ' · Nuit ' + c.nuit : '') + '</span><span class="text-xs ' + (saldo > 0 ? 'text-rose-400' : 'text-emerald-400') + '">' + (saldo > 0 ? 'Dívida: ' + saldo.toFixed(2) + ' MT' : 'Sem dívida') + '</span></div><button onclick="abrirModalCliente(' + c.id + ')" class="bg-blue-600 px-2.5 py-1.5 rounded-lg text-xs">Editar</button></div>';
+    }).join('') : '<div class="text-gray-500 text-center py-8 text-xs">Nenhum cliente encontrado.</div>';
+}
+
+function renderDividas() {
+    const lista = document.getElementById('listaDividas');
+    if (!lista) return;
+    const abertas = dividas.filter(d => d.saldo > 0).sort((a, b) => new Date(b.data) - new Date(a.data));
+    document.getElementById('totalDividasAbertas').innerText = abertas.reduce((s, d) => s + d.saldo, 0).toFixed(2) + ' MT';
+    lista.innerHTML = abertas.length ? abertas.map(d =>
+        '<div class="conta-card"><div class="flex justify-between items-start gap-2"><div><strong>' + d.clienteNome + '</strong><span class="block text-xs text-gray-400">' + formatarDataHora(d.data) + ' · Conta #' + d.id + '</span></div><strong class="text-rose-400">Saldo: ' + d.saldo.toFixed(2) + ' MT</strong></div>' +
+        '<div class="item-row mt-2"><span>Valor inicial</span><span>' + d.valorOriginal.toFixed(2) + ' MT</span></div>' +
+        '<div class="item-row"><span>Recebido</span><span>' + (d.valorOriginal - d.saldo).toFixed(2) + ' MT</span></div>' +
+        '<button onclick="registarPagamentoDivida(' + d.id + ')" class="w-full bg-emerald-600 text-white py-2 rounded-lg text-xs font-bold mt-2">Registar pagamento</button></div>'
+    ).join('') : '<div class="text-gray-500 text-center py-8 text-xs">Não existem dívidas em aberto.</div>';
+}
+
+window.registarPagamentoDivida = function (id) {
+    const divida = dividas.find(d => d.id === id);
+    if (!divida || divida.saldo <= 0) return;
+    abrirModal('Receber Pagamento', '<div class="text-sm">' + divida.clienteNome + '<span class="block text-rose-400">Saldo: ' + divida.saldo.toFixed(2) + ' MT</span></div><label class="text-xs text-gray-400">Valor recebido (MT):</label><input id="valorPagamentoDivida" type="number" min="0.01" max="' + divida.saldo + '" step="0.01" value="' + divida.saldo.toFixed(2) + '" class="w-full bg-gray-900 border border-gray-700 p-2.5 rounded-xl text-white">', () => {
+        const valor = parseFloat(document.getElementById('valorPagamentoDivida').value);
+        if (!Number.isFinite(valor) || valor <= 0 || valor > divida.saldo) { alert('O valor deve ser maior que zero e não pode exceder o saldo.'); return false; }
+        divida.pagamentos = divida.pagamentos || [];
+        divida.pagamentos.push({ valor, data: new Date().toISOString(), por: utilizadorLogado.nome });
+        divida.saldo = Math.max(0, Number((divida.saldo - valor).toFixed(2)));
+        if (divida.saldo === 0) {
+            divida.status = 'PAGA';
+            divida.pedidoIds.forEach(pedidoId => {
+                const pedido = pedidos.find(p => p.id === pedidoId);
+                if (pedido) { pedido.status = 'PAGO'; pedido.dataPagamento = new Date().toISOString(); }
+            });
+        }
+        salvarDados();
+        renderDividas();
+        return true;
+    });
+};
+
+document.getElementById('inputCodigo').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') autenticarPorCodigo();
+});
+
+document.getElementById('inputCodigoDia').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') abrirDia();
+});
+
+inicializarDia();
+</script>
+</body>
+</html>
